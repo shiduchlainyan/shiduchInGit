@@ -1,0 +1,78 @@
+D:\OurProject\DTO\bin\Debug\DTO.dll
+D:\OurProject\DTO\bin\Debug\DTO.pdb
+D:\OurProject\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\OurProject\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\OurProject\DTO\obj\Debug\DTO.dll
+D:\OurProject\DTO\obj\Debug\DTO.pdb
+Y:\group 1 תשעט\מונק אסתי\פרויקט גמר\OurProject\DTO\bin\Debug\DTO.dll
+Y:\group 1 תשעט\מונק אסתי\פרויקט גמר\OurProject\DTO\bin\Debug\DTO.pdb
+Y:\group 1 תשעט\מונק אסתי\פרויקט גמר\OurProject\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+Y:\group 1 תשעט\מונק אסתי\פרויקט גמר\OurProject\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+Y:\group 1 תשעט\מונק אסתי\פרויקט גמר\OurProject\DTO\obj\Debug\DTO.dll
+Y:\group 1 תשעט\מונק אסתי\פרויקט גמר\OurProject\DTO\obj\Debug\DTO.pdb
+Y:\group 1 תשעט\מונק אסתי\OurProject\DTO\bin\Debug\DTO.dll
+Y:\group 1 תשעט\מונק אסתי\OurProject\DTO\bin\Debug\DTO.pdb
+Y:\group 1 תשעט\מונק אסתי\OurProject\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+Y:\group 1 תשעט\מונק אסתי\OurProject\DTO\obj\Debug\DTO.dll
+Y:\group 1 תשעט\מונק אסתי\OurProject\DTO\obj\Debug\DTO.pdb
+Y:\group 1 תשעט\מונק אסתי\OurProject\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\our\OurProject\DTO\bin\Debug\DTO.dll
+D:\our\OurProject\DTO\bin\Debug\DTO.pdb
+D:\our\OurProject\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\our\OurProject\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\our\OurProject\DTO\obj\Debug\DTO.dll
+D:\our\OurProject\DTO\obj\Debug\DTO.pdb
+Y:\group 1 תשעט\אטיק בתיה\OurProject\DTO\bin\Debug\DTO.dll
+Y:\group 1 תשעט\אטיק בתיה\OurProject\DTO\bin\Debug\DTO.pdb
+Y:\group 1 תשעט\אטיק בתיה\OurProject\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+Y:\group 1 תשעט\אטיק בתיה\OurProject\DTO\obj\Debug\DTO.dll
+Y:\group 1 תשעט\אטיק בתיה\OurProject\DTO\obj\Debug\DTO.pdb
+Y:\group 1 תשעט\מונק אסתי\aaa\OurProject\DTO\bin\Debug\DTO.dll
+Y:\group 1 תשעט\מונק אסתי\aaa\OurProject\DTO\bin\Debug\DTO.pdb
+Y:\group 1 תשעט\מונק אסתי\aaa\OurProject\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+Y:\group 1 תשעט\מונק אסתי\aaa\OurProject\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+Y:\group 1 תשעט\מונק אסתי\aaa\OurProject\DTO\obj\Debug\DTO.dll
+Y:\group 1 תשעט\מונק אסתי\aaa\OurProject\DTO\obj\Debug\DTO.pdb
+Y:\group 1 תשעט\אטיק בתיה\our\OurProject\DTO\bin\Debug\DTO.dll
+Y:\group 1 תשעט\אטיק בתיה\our\OurProject\DTO\bin\Debug\DTO.pdb
+Y:\group 1 תשעט\אטיק בתיה\our\OurProject\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+Y:\group 1 תשעט\אטיק בתיה\our\OurProject\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+Y:\group 1 תשעט\אטיק בתיה\our\OurProject\DTO\obj\Debug\DTO.dll
+Y:\group 1 תשעט\אטיק בתיה\our\OurProject\DTO\obj\Debug\DTO.pdb
+Y:\group 1 תשעט\אטיק בתיה\OurProject\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\shiduch\OurProject\DTO\bin\Debug\DTO.dll
+D:\shiduch\OurProject\DTO\bin\Debug\DTO.pdb
+D:\shiduch\OurProject\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\shiduch\OurProject\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\shiduch\OurProject\DTO\obj\Debug\DTO.dll
+D:\shiduch\OurProject\DTO\obj\Debug\DTO.pdb
+D:\-_ester_shiduch\OurProject\DTO\bin\Debug\DTO.dll
+D:\-_ester_shiduch\OurProject\DTO\bin\Debug\DTO.pdb
+D:\-_ester_shiduch\OurProject\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\-_ester_shiduch\OurProject\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\-_ester_shiduch\OurProject\DTO\obj\Debug\DTO.dll
+D:\-_ester_shiduch\OurProject\DTO\obj\Debug\DTO.pdb
+D:\fa\ourProject\DTO\bin\Debug\DTO.dll
+D:\fa\ourProject\DTO\bin\Debug\DTO.pdb
+D:\fa\ourProject\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\fa\ourProject\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\fa\ourProject\DTO\obj\Debug\DTO.dll
+D:\fa\ourProject\DTO\obj\Debug\DTO.pdb
+Y:\group 1 תשעט\אטיק בתיה\PRO\DTO\bin\Debug\DTO.dll
+Y:\group 1 תשעט\אטיק בתיה\PRO\DTO\bin\Debug\DTO.pdb
+Y:\group 1 תשעט\אטיק בתיה\PRO\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+Y:\group 1 תשעט\אטיק בתיה\PRO\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+Y:\group 1 תשעט\אטיק בתיה\PRO\DTO\obj\Debug\DTO.dll
+Y:\group 1 תשעט\אטיק בתיה\PRO\DTO\obj\Debug\DTO.pdb
+D:\ANGULAR\DTO\bin\Debug\DTO.dll
+D:\ANGULAR\DTO\bin\Debug\DTO.pdb
+D:\ANGULAR\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\ANGULAR\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\ANGULAR\DTO\obj\Debug\DTO.dll
+D:\ANGULAR\DTO\obj\Debug\DTO.pdb
+G:\ANGULAR\DTO\bin\Debug\DTO.dll
+G:\ANGULAR\DTO\bin\Debug\DTO.pdb
+G:\ANGULAR\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+G:\ANGULAR\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+G:\ANGULAR\DTO\obj\Debug\DTO.dll
+G:\ANGULAR\DTO\obj\Debug\DTO.pdb

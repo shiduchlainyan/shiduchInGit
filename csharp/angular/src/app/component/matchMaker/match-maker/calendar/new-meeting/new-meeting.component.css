@@ -1,0 +1,25 @@
+.modal-header {
+    justify-items: center;
+    width: 100%;
+    direction: rtl;
+}
+
+h1 {
+    justify-self: center;
+    margin: auto;
+}
+.close {
+    margin-left: 0 !important;
+}
+body {
+    text-align: center;
+    font-size: 1.2vw;
+    width: 40vw !important;
+    margin: auto;
+    background: white !important;
+
+}
+.card-body {
+    font-size: 1.09vw !important;
+    width: 100% !important;
+}

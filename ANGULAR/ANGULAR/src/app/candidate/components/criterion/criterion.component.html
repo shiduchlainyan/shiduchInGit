@@ -1,0 +1,100 @@
+<form #frm="ngForm">
+    <div *ngIf="cand">
+        <h5>בשלב זה עליך להכניס קריטריונים לפיהם תרצה שיתבצע החיפוש</h5>
+
+        <div dir="rtl" class="form-group row  ddddd">
+            <label class=" col-form-label text-md-right"><strong>מעוניין ב...</strong></label>
+
+            <div class="col-md-5">
+                <select class="form-control" id="intersted" [(ngModel)]="selectedCrit" name="intersted" (change)="addCriteronList(1)">
+                    <option *ngFor="let c of criterionsArrInteresting" [value]="c.CriterionId">{{c.NameCriterion}}
+                    </option>
+                </select>
+
+            </div>
+        </div>
+
+        <div *ngFor="let item of cand.ValueListCandidate; let i = index">
+            <div *ngIf="!item.isSelf && item.isInclude" class="form-group row  ddddd">
+                <label for="" class=" col-form-label text-md-right">{{getCriterionName(item.CriteriaId)}}</label>
+                <!-- מתוך רשימת ערכים -->
+                <div *ngIf="getKindCriterion(item.CriteriaId) == 1" class="col-md-5">
+                    <select [(ngModel)]="item.ValueListId" class="form-control" name="criter-{{i}}" id="">
+                        <option *ngFor="let val of dCandidateService.GetValueList(item.CriteriaId)" [value]="val.ValueListId">{{val.Value}}
+                        </option>
+                    </select>
+                </div>
+                <!-- ערכים מספריים מסוג תווך -->
+                <div *ngIf="getKindCriterion(item.CriteriaId) == 3">
+                    <div class="col-md-5">
+                        <input type="number" name="satisfacMinValue-{{i}}" [(ngModel)]="item.satisfacMinValue" class="form-control"
+                            placeholder="מ">
+
+
+                        <input type="number" name="satisfacMaxValue-{{i}}" [(ngModel)]="item.satisfacMaxValue" class="form-control"
+                            placeholder="עד">
+                    </div>
+                </div>
+
+
+                <!-- עבור ערכים בוליאנים -->
+                <div *ngIf="getKindCriterion(item.CriteriaId) == 2">
+                    <div class="col-md-5">
+
+                        <select [(ngModel)]="item.satisfacBool" class="form-control" name="satisfacBool-{{i}}" id="">
+                            <option [ngValue]="false">לא</option>
+                            <option [ngValue]="true">כן</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <button class="btn btn-light bbuutt" (click)="removeCrit(item)">הסר</button>
+                </div>
+            </div>
+        </div>
+
+        <div dir="rtl" class="form-group row  ddddd">
+            <label for="criter" class=" col-form-label text-md-right"><strong>לא מעוניין ב...</strong></label>
+
+            <div class="col-md-5">
+                <select class="form-control" id="intersted" [(ngModel)]="selectedCrit" name="Notintersted" (change)="addCriteronList(0)">
+                    <option *ngFor="let c of criterionsArrNotInteresting" [value]="c.CriterionId">{{c.NameCriterion}}
+                    </option>
+                </select>
+
+            </div>
+        </div>
+
+
+
+        <div *ngFor="let item of cand.ValueListCandidate; let i = index">
+            <div *ngIf="!item.isSelf && !item.isInclude" class="form-group row  ddddd">
+                <label for=" criter" class=" col-form-label text-md-right">{{getCriterionName(item.CriteriaId)}}</label>
+                <!-- מתוך רשימת ערכים -->
+                <div class="col-md-5">
+                    <select *ngIf="getKindCriterion(item.CriteriaId) == 1" [(ngModel)]="item.ValueListId" class="form-control"
+                        name="criter-{{i}}" id="criter">
+                        <option *ngFor="let val of dCandidateService.GetValueList(item.CriteriaId)" [value]="val.ValueListId">{{val.Value}}
+                        </option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-light bbuutt" (click)="removeCrit(item)">הסר</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <div class="buttons">
+            <button type="button" class="btn btn-light" (click)="saveDetailCandidate()"> שמור </button>
+            <button type="button" class="btn btn-light" (click)="saveAndContinue()"> שמור והמשך </button>
+        </div>
+
+    </div>
+</form>

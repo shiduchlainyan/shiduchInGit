@@ -1,0 +1,54 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+
+      <h1>כניסה</h1>
+
+    </div>
+
+
+
+    <form class="input-group-center mb-3" (ngSubmit)="submitloginForm()">
+      <input type="text" [(ngModel)]="u.UserName" id="UserName" class=" second" name="UserName" placeholder="שם משתמש">
+
+
+
+
+      <input type="password" [(ngModel)]="u.Password" id="Password" id="eye" class=" third" name="Password" placeholder="סיסמה">
+      <img src="../../assets/view.png" class=""(click)="showPassword()">
+      <!-- (keyup)="validate(u.UserName, u.Password)"> -->
+      <p *ngIf="hasErorr">.... אחד מהנתונים שהזנת שגוי! אנא נסה שנית</p>
+
+      <input type="submit" class="w-40 fourth btn btn-warning btn-lg" value="כניסה">
+    </form>
+
+
+
+
+    <!-- <form class="input-group-center mb-3 col" (ngSubmit)="submitloginForm()">
+      <input type="text" [(ngModel)]="u.UserName" id="UserName" class=" second" name="UserName" placeholder="שם משתמש">
+      
+      <input type="password" [(ngModel)]="u.Password" id="Password" id="eye" class=" third" name="Password" placeholder="סיסמה">
+     
+       <div class="">
+        <button class="btn btn-default reveal" type="button" (click)="showPassword()"><i class="glyphicon glyphicon-eye-open"></i></button>
+      </div> 
+      <img src="../../assets/view.png" class=""(click)="showPassword()">
+      <p *ngIf="hasErorr">.... אחד מהנתונים שהזנת שגוי! אנא נסה שנית</p>
+      <input type="submit" class="w-40 fourth btn btn-warning btn-lg" value="כניסה">
+    </form> -->
+
+
+
+
+  </div>
+</div>

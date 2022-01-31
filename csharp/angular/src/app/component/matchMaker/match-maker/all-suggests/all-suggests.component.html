@@ -1,0 +1,105 @@
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="tab-content" id="myTabContent">
+
+  <div class="card sticky-top">
+    <button class="card-img-top button bbb btn" name="eeeee" lang="he" (click)="show()"> ...חיפוש לפי<img src="../../../../../assets/wight.png"></button>
+    <div class="card-body" *ngIf="showMe">
+      <div dir="rtl" class="col-md-13 row  ddddd">
+        <label for="tzGroom" class=" col-form text-md-right " id="search">תעודת זהות חתן</label>
+        <div class="col-md">
+          <input type="text" id="tzGroom" class="form-control tz" name="tzGroom" [(ngModel)]="tzGroom" (change)="onkeyupMethod()" (keypress)="numberOnly($event)" 
+          minlength="8" maxlength="9">
+        </div>
+      </div>
+
+      <div dir="rtl" class="col-md-13 row ddddd ">
+        <label for="tzBride" class=" col-form text-md-right " id="search"> תעודת זהות כלה</label>
+        <div class="col-md">
+          <input type="text" id="tzBride" class="form-control tz" name="tzBride" [(ngModel)]="tzBride" (change)="onkeyupMethod()" (keypress)="numberOnly($event)" 
+          minlength="8" maxlength="9">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-group" dir="rtl">
+
+    <div *ngFor="let item of onkeyupMethod() ;  index as i" class="all-sugestes-cards col-md-8">
+      <div class="row register-form">
+        <div class="col-md-6">
+            
+          <div *ngIf="fullNames" class="form-group col-md-13 row ddddd">
+            <label class=" col-form-label text-md-right ">  שם חתן {{fullNames[i].groom}}</label>
+          </div>
+          <div class="form-group col-md-13 row ddddd">
+            <label class=" col-form-label text-md-right "> תעודת זהות חתן {{item.tzGroom}}</label>
+          </div>
+          <div dir="rtl" class="col-md-13 row ddddd ">
+            <label for="StatusGroom" class="cc col-form-label text-md-right ">סטטוס הצעה חתן</label>
+            
+            <div class="col-md">
+              <select class="form-control glyphicon glyphicon-search" id="StatusGroom" name="StatusGroom" [(ngModel)]="item.StatusGroom">
+                <option [ngValue]="1">לא התיחס להצעה</option>
+                <option [ngValue]="2">לחץ על מעונין</option>
+                <option [ngValue]="3">לחץ על לא מעונין</option>
+                <option [ngValue]="4">נפגש</option>
+                <option [ngValue]="5">סגירת שידוך</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div  *ngIf="fullNames" class="form-group col-md-13 row ddddd ">
+            <label class=" col-form-label text-md-right ">  שם כלה {{fullNames[i].bird}}</label>
+          </div>
+          <div class="form-group col-md-13 row ddddd ">
+            <label class=" col-form-label text-md-right "> תעודת זהות כלה {{item.tzBride}} </label>
+          </div>  
+          <div dir="rtl" class="col-md-13 row ddddd ">
+            <label for="StatusBride" class="cc col-form-label text-md-right ">סטטוס הצעה כלה</label>
+
+            <div class="col-md">
+              <select class="form-control" id="StatusBride" name="StatusBride" [(ngModel)]="item.StatusBride">
+                <option [ngValue]="1">לא התיחס להצעה</option>
+                <option [ngValue]="2">לחץ על מעונין</option>
+                <option [ngValue]="3">לחץ על לא מעונין</option>
+                <option [ngValue]="4">נפגש</option>
+                <option [ngValue]="5">סגירת שידוך</option>
+              </select>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div dir="rtl" class="form-group row  ddddd">
+        <label for="description" class=" text-md-right" id="command"> הערות</label>
+
+        <div class="col-md">
+
+          <input type="text" id="description" class="form-control col-md-6" name="description" [(ngModel)]="item.description">
+        </div>
+      </div>
+
+      <!-- <div class="form-group" *ngIf="item.StatusBride==4&&item.StatusGroom==4">
+        <label for="tzGroom" class=" col-form-label text-md-right tzAllSuggest row">תאריך פגישה:
+        {{item.MeetingDate}}</label>
+        <label for="tzGroom" class=" col-form-label text-md-right tzAllSuggest row">זמן התחלה:{{item.start}} </label>
+        <label for="tzGroom" class=" col-form-label text-md-right tzAllSuggest row">זמן סיום:{{item.end1}} </label>
+      </div> -->
+      <div class="buttons row">
+
+        <button type="button" class="btn " (click)="editMeeting(item)">עדכון פרטי פגישה</button>
+        <button type="button" class="btn " (click)="openModalWithComponent(item.tzGroom)">פרטים חתן</button>
+        <button type="button" class="btn " (click)="openModalWithComponent(item.tzBride)">פרטים כלה</button>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

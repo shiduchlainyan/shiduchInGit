@@ -1,0 +1,51 @@
+  <body>
+    <div class="container-fluid">
+    
+        <div class="modal-header">
+  
+            <!-- class=" col-form-label text-center" -->
+        
+            
+            <h1 >טופס ויתור סודיות</h1>
+            <button type="button" class="close " aria-label="Close" (click)="bsModalRef.hide()">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          
+      <div class="modal-body">
+  
+        <div class="text-justify">
+          <p lang="he" class="font-p-black">
+            אני החתום מטה <label class="font-lable-lightgary">{{cand.User.LastName}} {{cand.User.FirstName}}</label> מספר זהות <label class="font-lable-lightgary"> {{cand.User.Tz}}</label>
+            ,נותן בזאת רשות למערכת שידוכים לעינין וכן למועמדים שיעינו בפרטי
+            למסור את כל הפרטים
+            ללא יוצא מן הכלל ובכל אופן שידרוש המבקש על מצב בריאותי הנפשי או השיקומי. אני משחרר משמירת
+            סודיות רפואית, וחובת ההגנה על פרטיותי בכל הנוגע למצב בריאותי או שיקומי או מחלותי
+            או מידע כאמור ומוותר על סודיות זו כלפי
+            המבקש, ולא תהיה לי כל טענה או תביעה מסוג כלשהו בקשר למסירת מידע כאמור. כתב
+            ויתור סודיות זה יהיה בתוקף מיום חתימתו אלא אם כן נמסרה הודעה בכתב.
+  
+  
+          </p>
+  
+  
+  
+  
+  
+          <div class="form-group row  text-center" style=" justify-content: center;">
+            <label for="ConfidentialityWaiverForm" class=" col-form-label text-md-left" style=" width: 5vw; margin-right: 0; font:2vw;">חתימה</label>
+            <div class="col-md-6">
+              <input dir="rtl" class="form-control" type="text" placeholder="הקלד שם מלא!"
+                [(ngModel)]="cand.Candidate.ConfidentialityWaiverForm">
+            </div>
+          </div>
+          <div class="form-group row text-center " style=" justify-content: center;">
+            <button (click)="bsModalRef.hide()" class="btn btn-light">אישור</button>
+          </div>
+  
+        </div>
+        
+      </div>
+    </div>
+  </body>
+  <!-- end -->

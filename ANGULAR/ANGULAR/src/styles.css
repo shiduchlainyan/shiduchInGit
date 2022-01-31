@@ -1,0 +1,137 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@fullcalendar/core/main.css';
+@import '~@fullcalendar/daygrid/main.css';
+
+
+
+
+p{
+    color: red;
+  
+}
+
+.font-p-black {
+    color: black !important;
+   font-size: 1.5vw;      
+}
+/* ===============modal======================= */
+.modal-content {
+
+    background-color:#fae8da !important;
+    max-width: 40vw;
+}
+.modal.fade .modal-dialog{
+    max-width: 40vw !important;
+}
+
+.modal-lg {
+    max-width: 40vw !important;
+}
+
+/* ==============כפתורים==================== */
+.btn:hover {
+    background: #b4a69a !important;
+}
+
+.btn {
+
+    background: #343a40 !important;
+    border: #343a40 !important;
+    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif !important;
+    color: white !important;
+    /* width: 12vw !important;
+   
+    height: 8vh !important;
+    font-size: 2vw !important; */
+     margin: 0.5vw;
+     text-align: center;
+}
+
+.buttons {
+    float: left;
+    margin-left: 1vw;
+}
+
+/* ============עצוב הדף של התאבים================== */
+.ddddd {
+    margin-right: unset;
+    font-family :Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif !important;
+}
+
+.form-control {
+    width: 30vw;
+    border: 1px solid #b99376 !important;
+}
+
+.col-form-label {
+    margin-right: 2vw;
+    width: 9vw;
+
+}
+
+.font-weight-bold {
+    margin: 2vh;
+    
+    width: 15vw;
+}
+
+.form-control {
+    border: 1px solid #b99376;
+}
+
+.selectmarg {
+    margin-right: 11vw;
+}
+
+.card-group {
+    justify-content: center;
+}
+
+.all-sugestes-cards {
+    border: 2.3px solid #b99376 !important;
+
+    border-radius: 0.4vh !important;
+    margin-bottom: 1vh !important;
+    width: 18vw
+}
+
+
+th {
+    font-family:Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif !important;
+
+}
+* {
+  font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif !important;
+ 
+}
+.col-md-8 {
+    
+    text-align: right !important;
+    
+}
+.col-md-3 {
+    
+   margin: 0 !important;
+    
+}
+.tav_line{
+    text-align: right !important;
+    width: 5vw !important;
+}
+/* datePicker */
+.theme-green .bs-datepicker-head {
+    background-color: #b99376 !important;
+}
+
+.theme-green .bs-datepicker-body table td.week span {
+    color: #b99376 !important;
+}
+.theme-green .bs-datepicker-body table td span.selected, .theme-green .bs-datepicker-body table td.selected span, .theme-green .bs-datepicker-body table td span[class*="select-"]:after, .theme-green .bs-datepicker-body table td[class*="select-"] span:after {
+    background-color: #b99376 !important;
+}
+body{
+    overflow: hidden;
+}
+html {
+    overflow: hidden;
+}

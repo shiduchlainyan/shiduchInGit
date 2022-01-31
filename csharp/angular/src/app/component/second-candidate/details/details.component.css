@@ -1,0 +1,52 @@
+.col-md-3 {
+    text-align: left !important;
+}
+
+
+.modal-header {
+    justify-items: center;
+    width: 100%;
+}
+
+h1 {
+    justify-self: center
+}
+
+.close {
+    margin-left: 0 !important;
+}
+
+.card-body {
+    font-size: 1.09vw !important;
+    width: 100% !important;
+}
+
+.col-sm-2 {
+    text-align: right !important;
+    padding: 0;
+}
+
+.col-md-1 {
+    text-align: right !important;
+    padding: 0;
+}
+
+.col-sm-4 {
+    text-align: right !important;
+    padding: 0;
+}
+h3{
+  color:   #af848c;
+}
+.col-sm-5{
+    text-align: right !important;
+    padding: 0;
+}
+.form-group{margin-bottom: 1rem;
+    width: 40vw;
+    margin: 0;
+}
+/* .col-sm-3{} */
+p{
+    color: unset !important;
+} 

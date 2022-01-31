@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+</head>
+
+<body>
+
+  <h2 *ngIf=" TaskesKing1?.length!=0"> רשימת מטלות</h2>
+  <h5>מועמדים שהגישו בקשה להשלמת פרטים</h5>
+  <div *ngFor="let item of TaskesKing1">
+    <div class="accordion">
+      מועמד/ת בשם {{item.firstName}} {{item.lastName}} מעונין/ת בפגישה עם שדכן לצורך השלמת פרטים
+      <!-- <button (click)="remov(item ,1)"> הסר </button> -->
+      <div class="wapperimage">
+        |
+        <img src="../../../../../assets/garbage.png" data-toggle="tooltip" data-placement="top" title="הסר" (click)="remov(item ,1)">
+        <img src="../../../../../assets/addComment.png" data-toggle="tooltip" data-placement="top" title="הוסף הערה"
+          *ngIf="!item.finishComment" (click)="active($event.target.parentElement)" />
+        <img src="../../../../../assets/seeNote.png" data-toggle="tooltip" data-placement="top" title="צפה הערה" *ngIf="item.finishComment"
+          (click)="active($event.target.parentElement)" />
+      </div>
+    </div>
+    <div class="panel">
+      <div *ngIf="!item. finishComment">
+          <input class="form-control col-7" [(ngModel)]="item.comment" placeholder="הכנס הערה"/> 
+          <button class="btn  col-3" (click)="addComment(item,$event)">שמירה</button>
+      </div>
+      <span *ngIf="item.finishComment">{{item.comment}}</span>
+    </div>
+  </div>
+
+  <hr *ngIf=" TaskesKing1?.length!=0&&TaskesKing2?.length!=0">
+  <h5 *ngIf=" TaskesKing2?.length!=0">מועמדים שמעונינים בהצעה מסוימת</h5>
+
+  <div *ngFor="let item of TaskesKing2">
+    <div class="accordion">
+      מועמד/ת בשם {{item.firstName}} {{item.lastName}} מעוינן בהצעה עם {{item.interestFirstName}}
+      {{item.interestLastName}}
+
+      <div class="wapperimage">
+        |
+        <img src="../../../../../assets/garbage.png" data-toggle="tooltip" data-placement="top" title="הסר" (click)="remov(item ,2)">
+        <img src="../../../../../assets/addComment.png" data-toggle="tooltip" data-placement="top" title="הוסף הערה"
+          *ngIf="!item.finishComment" (click)="active($event.target.parentElement)" />
+        <img src="../../../../../assets/seeNote.png" data-toggle="tooltip" data-placement="top" title="צפה הערה" *ngIf="item.finishComment"
+          (click)="active($event.target.parentElement)" />
+      </div>
+
+    </div>
+    <div class="panel">
+      <div class="row" *ngIf="!item.finishComment">
+        <input class="form-control col-7" [(ngModel)]="item.comment" placeholder="הכנס הערה"/> 
+        <button class="btn  col-3" (click)="addComment(item,$event)">שמירה</button>
+      </div>
+      <span *ngIf="item.finishComment">{{item.comment}}</span>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<h5 *ngIf="TaskesKing1?.length==0&&TaskesKing2?.length==0">אין מטלות</h5>

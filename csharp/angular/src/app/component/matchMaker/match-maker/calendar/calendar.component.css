@@ -1,0 +1,20 @@
+.app-top {
+    margin: 0 0 3em;
+  }
+  
+  .app-calendar {
+    margin: 0 auto;
+    max-width: 50vw;
+    height: 26vw;
+  }
+  .form-group{width: 44vw;
+    margin: auto;
+    margin-bottom: 0.5vw;
+    justify-content: center;}
+    .form-control {
+        margin: 0.5vw;
+        
+          width: 71% !important;
+  }
+  .col-md{padding: 0;
+  width: 20vw;}

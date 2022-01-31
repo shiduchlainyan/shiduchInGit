@@ -1,0 +1,45 @@
+body {
+    background-color:#f1f1f1;
+  }
+  
+  div.center{
+    margin-left:400px;
+  }
+  .td_3{
+    text-align: center;
+  }
+  form{
+    margin: auto;
+  
+  }
+  td{
+      margin: 5vw;
+  }
+ table{
+    margin: auto;
+ }
+ .form-control{
+    margin-bottom: 1vh;
+    width: 40vw;
+    height: 7vh;
+ }
+ .valid{
+    margin: 0.5vh;
+    text-align: right;
+    
+ }
+ .ta{
+   height: 20vh;
+  }
+  .btn-sm{
+   width: 40vw;
+   height: 6vh;
+   margin: 0vw;
+  }
+ /* ================== */
+ .mydiv{
+    text-align: center!important;
+    width: 40vw;
+    margin:1.5vw auto ;
+   
+ }

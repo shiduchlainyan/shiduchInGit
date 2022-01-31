@@ -1,0 +1,239 @@
+Y:\group 1 תשעט\מונק אסתי\פרויקט גמר\OurProject\DAL\bin\Debug\DAL.dll.config
+Y:\group 1 תשעט\מונק אסתי\פרויקט גמר\OurProject\DAL\bin\Debug\DAL.dll
+Y:\group 1 תשעט\מונק אסתי\פרויקט גמר\OurProject\DAL\bin\Debug\DAL.pdb
+Y:\group 1 תשעט\מונק אסתי\פרויקט גמר\OurProject\DAL\bin\Debug\EntityFramework.dll
+Y:\group 1 תשעט\מונק אסתי\פרויקט גמר\OurProject\DAL\bin\Debug\EntityFramework.SqlServer.dll
+Y:\group 1 תשעט\מונק אסתי\פרויקט גמר\OurProject\DAL\bin\Debug\Newtonsoft.Json.dll
+Y:\group 1 תשעט\מונק אסתי\פרויקט גמר\OurProject\DAL\bin\Debug\EntityFramework.xml
+Y:\group 1 תשעט\מונק אסתי\פרויקט גמר\OurProject\DAL\bin\Debug\EntityFramework.SqlServer.xml
+Y:\group 1 תשעט\מונק אסתי\פרויקט גמר\OurProject\DAL\bin\Debug\Newtonsoft.Json.xml
+Y:\group 1 תשעט\מונק אסתי\פרויקט גמר\OurProject\DAL\obj\Debug\DAL.dll
+Y:\group 1 תשעט\מונק אסתי\פרויקט גמר\OurProject\DAL\obj\Debug\DAL.pdb
+Y:\group 1 תשעט\מונק אסתי\פרויקט גמר\OurProject\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+Y:\group 1 תשעט\מונק אסתי\פרויקט גמר\OurProject\DAL\obj\Debug\DAL.csproj.CopyComplete
+Y:\group 1 תשעט\מונק אסתי\פרויקט גמר\OurProject\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\OurProject\DAL\bin\Debug\DAL.dll.config
+D:\OurProject\DAL\bin\Debug\DAL.dll
+D:\OurProject\DAL\bin\Debug\DAL.pdb
+D:\OurProject\DAL\bin\Debug\EntityFramework.dll
+D:\OurProject\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\OurProject\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\OurProject\DAL\bin\Debug\EntityFramework.xml
+D:\OurProject\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\OurProject\DAL\bin\Debug\Newtonsoft.Json.xml
+D:\OurProject\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\OurProject\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\OurProject\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\OurProject\DAL\obj\Debug\DAL.dll
+D:\OurProject\DAL\obj\Debug\DAL.pdb
+D:\OurProject\DAL\bin\Debug\DTO.dll
+D:\OurProject\DAL\bin\Debug\DTO.pdb
+Y:\group 1 תשעט\מונק אסתי\פרויקט גמר\OurProject\DAL\bin\Debug\DTO.dll
+Y:\group 1 תשעט\מונק אסתי\פרויקט גמר\OurProject\DAL\bin\Debug\DTO.pdb
+Y:\group 1 תשעט\מונק אסתי\OurProject\DAL\bin\Debug\DAL.dll.config
+Y:\group 1 תשעט\מונק אסתי\OurProject\DAL\bin\Debug\DAL.dll
+Y:\group 1 תשעט\מונק אסתי\OurProject\DAL\bin\Debug\DAL.pdb
+Y:\group 1 תשעט\מונק אסתי\OurProject\DAL\bin\Debug\DTO.dll
+Y:\group 1 תשעט\מונק אסתי\OurProject\DAL\bin\Debug\EntityFramework.dll
+Y:\group 1 תשעט\מונק אסתי\OurProject\DAL\bin\Debug\EntityFramework.SqlServer.dll
+Y:\group 1 תשעט\מונק אסתי\OurProject\DAL\bin\Debug\Newtonsoft.Json.dll
+Y:\group 1 תשעט\מונק אסתי\OurProject\DAL\bin\Debug\DTO.pdb
+Y:\group 1 תשעט\מונק אסתי\OurProject\DAL\bin\Debug\EntityFramework.xml
+Y:\group 1 תשעט\מונק אסתי\OurProject\DAL\bin\Debug\EntityFramework.SqlServer.xml
+Y:\group 1 תשעט\מונק אסתי\OurProject\DAL\bin\Debug\Newtonsoft.Json.xml
+Y:\group 1 תשעט\מונק אסתי\OurProject\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+Y:\group 1 תשעט\מונק אסתי\OurProject\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+Y:\group 1 תשעט\מונק אסתי\OurProject\DAL\obj\Debug\DAL.csproj.CopyComplete
+Y:\group 1 תשעט\מונק אסתי\OurProject\DAL\obj\Debug\DAL.dll
+Y:\group 1 תשעט\מונק אסתי\OurProject\DAL\obj\Debug\DAL.pdb
+D:\our\OurProject\DAL\bin\Debug\DAL.dll.config
+D:\our\OurProject\DAL\bin\Debug\DAL.dll
+D:\our\OurProject\DAL\bin\Debug\DAL.pdb
+D:\our\OurProject\DAL\bin\Debug\DTO.dll
+D:\our\OurProject\DAL\bin\Debug\EntityFramework.dll
+D:\our\OurProject\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\our\OurProject\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\our\OurProject\DAL\bin\Debug\DTO.pdb
+D:\our\OurProject\DAL\bin\Debug\EntityFramework.xml
+D:\our\OurProject\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\our\OurProject\DAL\bin\Debug\Newtonsoft.Json.xml
+D:\our\OurProject\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\our\OurProject\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\our\OurProject\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\our\OurProject\DAL\obj\Debug\DAL.dll
+D:\our\OurProject\DAL\obj\Debug\DAL.pdb
+Y:\group 1 תשעט\אטיק בתיה\OurProject\DAL\bin\Debug\DAL.dll.config
+Y:\group 1 תשעט\אטיק בתיה\OurProject\DAL\bin\Debug\DAL.dll
+Y:\group 1 תשעט\אטיק בתיה\OurProject\DAL\bin\Debug\DAL.pdb
+Y:\group 1 תשעט\אטיק בתיה\OurProject\DAL\bin\Debug\DTO.dll
+Y:\group 1 תשעט\אטיק בתיה\OurProject\DAL\bin\Debug\EntityFramework.dll
+Y:\group 1 תשעט\אטיק בתיה\OurProject\DAL\bin\Debug\EntityFramework.SqlServer.dll
+Y:\group 1 תשעט\אטיק בתיה\OurProject\DAL\bin\Debug\Newtonsoft.Json.dll
+Y:\group 1 תשעט\אטיק בתיה\OurProject\DAL\bin\Debug\DTO.pdb
+Y:\group 1 תשעט\אטיק בתיה\OurProject\DAL\bin\Debug\EntityFramework.xml
+Y:\group 1 תשעט\אטיק בתיה\OurProject\DAL\bin\Debug\EntityFramework.SqlServer.xml
+Y:\group 1 תשעט\אטיק בתיה\OurProject\DAL\bin\Debug\Newtonsoft.Json.xml
+Y:\group 1 תשעט\אטיק בתיה\OurProject\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+Y:\group 1 תשעט\אטיק בתיה\OurProject\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+Y:\group 1 תשעט\אטיק בתיה\OurProject\DAL\obj\Debug\DAL.csproj.CopyComplete
+Y:\group 1 תשעט\אטיק בתיה\OurProject\DAL\obj\Debug\DAL.dll
+Y:\group 1 תשעט\אטיק בתיה\OurProject\DAL\obj\Debug\DAL.pdb
+Y:\group 1 תשעט\מונק אסתי\aaa\OurProject\DAL\bin\Debug\DAL.dll.config
+Y:\group 1 תשעט\מונק אסתי\aaa\OurProject\DAL\bin\Debug\DAL.dll
+Y:\group 1 תשעט\מונק אסתי\aaa\OurProject\DAL\bin\Debug\DAL.pdb
+Y:\group 1 תשעט\מונק אסתי\aaa\OurProject\DAL\bin\Debug\DTO.dll
+Y:\group 1 תשעט\מונק אסתי\aaa\OurProject\DAL\bin\Debug\EntityFramework.dll
+Y:\group 1 תשעט\מונק אסתי\aaa\OurProject\DAL\bin\Debug\EntityFramework.SqlServer.dll
+Y:\group 1 תשעט\מונק אסתי\aaa\OurProject\DAL\bin\Debug\Newtonsoft.Json.dll
+Y:\group 1 תשעט\מונק אסתי\aaa\OurProject\DAL\bin\Debug\DTO.pdb
+Y:\group 1 תשעט\מונק אסתי\aaa\OurProject\DAL\bin\Debug\EntityFramework.xml
+Y:\group 1 תשעט\מונק אסתי\aaa\OurProject\DAL\bin\Debug\EntityFramework.SqlServer.xml
+Y:\group 1 תשעט\מונק אסתי\aaa\OurProject\DAL\bin\Debug\Newtonsoft.Json.xml
+Y:\group 1 תשעט\מונק אסתי\aaa\OurProject\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+Y:\group 1 תשעט\מונק אסתי\aaa\OurProject\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+Y:\group 1 תשעט\מונק אסתי\aaa\OurProject\DAL\obj\Debug\DAL.csproj.CopyComplete
+Y:\group 1 תשעט\מונק אסתי\aaa\OurProject\DAL\obj\Debug\DAL.dll
+Y:\group 1 תשעט\מונק אסתי\aaa\OurProject\DAL\obj\Debug\DAL.pdb
+Y:\group 1 תשעט\אטיק בתיה\our\OurProject\DAL\bin\Debug\DAL.dll.config
+Y:\group 1 תשעט\אטיק בתיה\our\OurProject\DAL\bin\Debug\DAL.dll
+Y:\group 1 תשעט\אטיק בתיה\our\OurProject\DAL\bin\Debug\DAL.pdb
+Y:\group 1 תשעט\אטיק בתיה\our\OurProject\DAL\bin\Debug\DTO.dll
+Y:\group 1 תשעט\אטיק בתיה\our\OurProject\DAL\bin\Debug\EntityFramework.dll
+Y:\group 1 תשעט\אטיק בתיה\our\OurProject\DAL\bin\Debug\EntityFramework.SqlServer.dll
+Y:\group 1 תשעט\אטיק בתיה\our\OurProject\DAL\bin\Debug\Newtonsoft.Json.dll
+Y:\group 1 תשעט\אטיק בתיה\our\OurProject\DAL\bin\Debug\DTO.pdb
+Y:\group 1 תשעט\אטיק בתיה\our\OurProject\DAL\bin\Debug\EntityFramework.xml
+Y:\group 1 תשעט\אטיק בתיה\our\OurProject\DAL\bin\Debug\EntityFramework.SqlServer.xml
+Y:\group 1 תשעט\אטיק בתיה\our\OurProject\DAL\bin\Debug\Newtonsoft.Json.xml
+Y:\group 1 תשעט\אטיק בתיה\our\OurProject\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+Y:\group 1 תשעט\אטיק בתיה\our\OurProject\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+Y:\group 1 תשעט\אטיק בתיה\our\OurProject\DAL\obj\Debug\DAL.csproj.CopyComplete
+Y:\group 1 תשעט\אטיק בתיה\our\OurProject\DAL\obj\Debug\DAL.dll
+Y:\group 1 תשעט\אטיק בתיה\our\OurProject\DAL\obj\Debug\DAL.pdb
+D:\shiduch\OurProject\DAL\bin\Debug\DAL.dll.config
+D:\shiduch\OurProject\DAL\bin\Debug\DAL.dll
+D:\shiduch\OurProject\DAL\bin\Debug\DAL.pdb
+D:\shiduch\OurProject\DAL\bin\Debug\DTO.dll
+D:\shiduch\OurProject\DAL\bin\Debug\EntityFramework.dll
+D:\shiduch\OurProject\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\shiduch\OurProject\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\shiduch\OurProject\DAL\bin\Debug\DTO.pdb
+D:\shiduch\OurProject\DAL\bin\Debug\EntityFramework.xml
+D:\shiduch\OurProject\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\shiduch\OurProject\DAL\bin\Debug\Newtonsoft.Json.xml
+D:\shiduch\OurProject\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\shiduch\OurProject\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\shiduch\OurProject\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\shiduch\OurProject\DAL\obj\Debug\DAL.dll
+D:\shiduch\OurProject\DAL\obj\Debug\DAL.pdb
+D:\-_ester_shiduch\OurProject\DAL\bin\Debug\DAL.dll.config
+D:\-_ester_shiduch\OurProject\DAL\bin\Debug\DAL.dll
+D:\-_ester_shiduch\OurProject\DAL\bin\Debug\DAL.pdb
+D:\-_ester_shiduch\OurProject\DAL\bin\Debug\DTO.dll
+D:\-_ester_shiduch\OurProject\DAL\bin\Debug\EntityFramework.dll
+D:\-_ester_shiduch\OurProject\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\-_ester_shiduch\OurProject\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\-_ester_shiduch\OurProject\DAL\bin\Debug\DTO.pdb
+D:\-_ester_shiduch\OurProject\DAL\bin\Debug\EntityFramework.xml
+D:\-_ester_shiduch\OurProject\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\-_ester_shiduch\OurProject\DAL\bin\Debug\Newtonsoft.Json.xml
+D:\-_ester_shiduch\OurProject\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\-_ester_shiduch\OurProject\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\-_ester_shiduch\OurProject\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\-_ester_shiduch\OurProject\DAL\obj\Debug\DAL.dll
+D:\-_ester_shiduch\OurProject\DAL\obj\Debug\DAL.pdb
+D:\fa\ourProject\DAL\bin\Debug\DAL.dll.config
+D:\fa\ourProject\DAL\bin\Debug\DAL.dll
+D:\fa\ourProject\DAL\bin\Debug\DAL.pdb
+D:\fa\ourProject\DAL\bin\Debug\DTO.dll
+D:\fa\ourProject\DAL\bin\Debug\EntityFramework.dll
+D:\fa\ourProject\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\fa\ourProject\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\fa\ourProject\DAL\bin\Debug\DTO.pdb
+D:\fa\ourProject\DAL\bin\Debug\EntityFramework.xml
+D:\fa\ourProject\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\fa\ourProject\DAL\bin\Debug\Newtonsoft.Json.xml
+D:\fa\ourProject\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\fa\ourProject\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\fa\ourProject\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\fa\ourProject\DAL\obj\Debug\DAL.dll
+D:\fa\ourProject\DAL\obj\Debug\DAL.pdb
+Y:\group 1 תשעט\אטיק בתיה\PRO\DAL\bin\Debug\DAL.dll.config
+Y:\group 1 תשעט\אטיק בתיה\PRO\DAL\bin\Debug\DAL.dll
+Y:\group 1 תשעט\אטיק בתיה\PRO\DAL\bin\Debug\DAL.pdb
+Y:\group 1 תשעט\אטיק בתיה\PRO\DAL\bin\Debug\DTO.dll
+Y:\group 1 תשעט\אטיק בתיה\PRO\DAL\bin\Debug\EntityFramework.dll
+Y:\group 1 תשעט\אטיק בתיה\PRO\DAL\bin\Debug\EntityFramework.SqlServer.dll
+Y:\group 1 תשעט\אטיק בתיה\PRO\DAL\bin\Debug\Newtonsoft.Json.dll
+Y:\group 1 תשעט\אטיק בתיה\PRO\DAL\bin\Debug\DTO.pdb
+Y:\group 1 תשעט\אטיק בתיה\PRO\DAL\bin\Debug\EntityFramework.xml
+Y:\group 1 תשעט\אטיק בתיה\PRO\DAL\bin\Debug\EntityFramework.SqlServer.xml
+Y:\group 1 תשעט\אטיק בתיה\PRO\DAL\bin\Debug\Newtonsoft.Json.xml
+Y:\group 1 תשעט\אטיק בתיה\PRO\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+Y:\group 1 תשעט\אטיק בתיה\PRO\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+Y:\group 1 תשעט\אטיק בתיה\PRO\DAL\obj\Debug\DAL.csproj.CopyComplete
+Y:\group 1 תשעט\אטיק בתיה\PRO\DAL\obj\Debug\DAL.dll
+Y:\group 1 תשעט\אטיק בתיה\PRO\DAL\obj\Debug\DAL.pdb
+D:\ANGULAR\DAL\bin\Debug\DAL.dll.config
+D:\ANGULAR\DAL\bin\Debug\DAL.dll
+D:\ANGULAR\DAL\bin\Debug\DAL.pdb
+D:\ANGULAR\DAL\bin\Debug\DTO.dll
+D:\ANGULAR\DAL\bin\Debug\EntityFramework.dll
+D:\ANGULAR\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\ANGULAR\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\ANGULAR\DAL\bin\Debug\DTO.pdb
+D:\ANGULAR\DAL\bin\Debug\EntityFramework.xml
+D:\ANGULAR\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\ANGULAR\DAL\bin\Debug\Newtonsoft.Json.xml
+D:\ANGULAR\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\ANGULAR\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\ANGULAR\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\ANGULAR\DAL\obj\Debug\DAL.dll
+D:\ANGULAR\DAL\obj\Debug\DAL.pdb
+D:\cSharp\DAL\bin\Debug\DAL.dll.config
+D:\cSharp\DAL\bin\Debug\DAL.dll
+D:\cSharp\DAL\bin\Debug\DAL.pdb
+D:\cSharp\DAL\bin\Debug\DTO.dll
+D:\cSharp\DAL\bin\Debug\EntityFramework.dll
+D:\cSharp\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\cSharp\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\cSharp\DAL\bin\Debug\DTO.pdb
+D:\cSharp\DAL\bin\Debug\EntityFramework.xml
+D:\cSharp\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\cSharp\DAL\bin\Debug\Newtonsoft.Json.xml
+D:\cSharp\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\cSharp\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\cSharp\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\cSharp\DAL\obj\Debug\DAL.dll
+D:\cSharp\DAL\obj\Debug\DAL.pdb
+G:\csharp\DAL\bin\Debug\DAL.dll.config
+G:\csharp\DAL\bin\Debug\DAL.dll
+G:\csharp\DAL\bin\Debug\DAL.pdb
+G:\csharp\DAL\bin\Debug\DTO.dll
+G:\csharp\DAL\bin\Debug\EntityFramework.dll
+G:\csharp\DAL\bin\Debug\EntityFramework.SqlServer.dll
+G:\csharp\DAL\bin\Debug\Newtonsoft.Json.dll
+G:\csharp\DAL\bin\Debug\DTO.pdb
+G:\csharp\DAL\bin\Debug\EntityFramework.xml
+G:\csharp\DAL\bin\Debug\EntityFramework.SqlServer.xml
+G:\csharp\DAL\bin\Debug\Newtonsoft.Json.xml
+G:\csharp\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+G:\csharp\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+G:\csharp\DAL\obj\Debug\DAL.dll
+G:\csharp\DAL\obj\Debug\DAL.pdb
+C:\Users\user\Documents\תכנות\פרויקט שידוך לענין\csharp\DAL\bin\Debug\DAL.dll.config
+C:\Users\user\Documents\תכנות\פרויקט שידוך לענין\csharp\DAL\bin\Debug\DAL.dll
+C:\Users\user\Documents\תכנות\פרויקט שידוך לענין\csharp\DAL\bin\Debug\DAL.pdb
+C:\Users\user\Documents\תכנות\פרויקט שידוך לענין\csharp\DAL\bin\Debug\DTO.dll
+C:\Users\user\Documents\תכנות\פרויקט שידוך לענין\csharp\DAL\bin\Debug\EntityFramework.dll
+C:\Users\user\Documents\תכנות\פרויקט שידוך לענין\csharp\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\Documents\תכנות\פרויקט שידוך לענין\csharp\DAL\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user\Documents\תכנות\פרויקט שידוך לענין\csharp\DAL\bin\Debug\DTO.pdb
+C:\Users\user\Documents\תכנות\פרויקט שידוך לענין\csharp\DAL\bin\Debug\EntityFramework.xml
+C:\Users\user\Documents\תכנות\פרויקט שידוך לענין\csharp\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\Documents\תכנות\פרויקט שידוך לענין\csharp\DAL\bin\Debug\Newtonsoft.Json.xml
+C:\Users\user\Documents\תכנות\פרויקט שידוך לענין\csharp\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\user\Documents\תכנות\פרויקט שידוך לענין\csharp\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\תכנות\פרויקט שידוך לענין\csharp\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\user\Documents\תכנות\פרויקט שידוך לענין\csharp\DAL\obj\Debug\DAL.dll
+C:\Users\user\Documents\תכנות\פרויקט שידוך לענין\csharp\DAL\obj\Debug\DAL.pdb

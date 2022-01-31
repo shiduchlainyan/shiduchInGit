@@ -1,0 +1,428 @@
+/* * {
+    box-sizing: border-box;
+  }
+  
+  
+ 
+  .check {
+    position: relative;
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+   
+    border-radius: 50%;
+  }
+  
+  .check span {
+    display: inline-block;
+    position: absolute;
+    width: 10%;
+    height: 100%;
+  }
+  
+  .check span:after {
+    position: absolute;
+    content: "";
+    background: #c00;
+    width: 100%;
+    height: 0;
+  }
+  
+  .check span:nth-child(1) {
+    margin: 0 45%;
+    transform: rotate(-45deg);
+  }
+  
+  .check span:nth-child(1):after {
+    top: 25%;
+  }
+  
+  .check.xed span:nth-child(1):after,
+  .check.xed span:nth-child(2):after {
+    height: 50%;
+  }
+  
+ 
+  .check.checked span:nth-child(2) {
+    margin: 0 32% 0 58%;
+  }
+ 
+ 
+  .check.checked span:nth-child(2):after {
+    height: 55%;
+    bottom: 19%;
+  }
+  
+ 
+ 
+  .check span:nth-child(2) {
+    margin: 0 45%;
+    transform: rotate(45deg);
+  }
+  
+  .check span:nth-child(2):after {
+    bottom: 25%;
+  }
+  
+/* ===================================== */
+  /* .container {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.card1 {
+  width: 20vw;
+  border: none;
+  height: 60vw;
+  background-color: #f8f2e5;
+  border-radius: 0;
+  text-align: center;
+  font-size: 5vw;
+}
+
+.card2 {
+
+  width: 60vw;
+  border: none;
+  height: 60vw;
+  background-color: #f8f2e5;
+  border-radius: 0;
+  text-align: center;
+  font-size: 1.5vw;
+  margin-right: 8vw;
+}
+
+h1 {
+  color: rgb(52, 58, 64);
+  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif !important;
+  margin-bottom: -0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+} */
+
+
+/* .btn {
+
+  background: #343a40;
+  border: #343a40;
+  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif !important;
+  color: white;
+  width: 28vw !important;
+
+  height: 4.5vw !important;
+  font-size: 2.5vw !important;
+  border-radius: 0;
+} */
+
+/* .col-md-6 {
+  padding: 0;
+
+}
+.btn-secondary{
+margin: 0vw;}
+
+.div1 {
+  position: absolute;
+  bottom: 9vw;
+}
+
+.btn1 {
+  display: inline-block;
+
+
+}
+
+.btn2 {
+  display: inline-block;
+
+
+}
+
+html {
+  background: #474d53;
+  overflow: hidden;
+  height: 100vw;
+  width: 100vw;
+}
+
+
+
+.btn:hover {
+  background: #b99376;
+}
+
+.towCards1 {
+  display: flex;
+  padding-top: 0;
+  padding-left: 5vw;
+}
+
+.text-center {
+
+  margin: auto;
+  justify-content: center;
+
+}
+
+.shiduch {
+  font-size: 5vw !important;
+  margin-top: 0wh;
+  margin-bottom: -1rem;
+  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif !important;
+}
+
+.lainyan .shiduch {
+  font-size: 3.5vw;
+  margin-top: 0vw;
+  width: 9vw;
+  margin-left: 0.1vw;
+  font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif !important;
+
+}
+
+.div4 {
+  margin-top: -12vw;
+}
+
+img {
+  margin: auto;
+  margin-top: 27vw;
+  margin-bottom: -3vw;
+  border-style: none;
+  width: 10vw;
+  height: auto;
+}
+
+.h2,
+h2 {
+  font-size: 3rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  margin: auto !important;
+  margin-top: 25vw !important
+}
+.btn-group{
+direction: ltr;
+    width: 50vw;
+    height: 8vh;}
+
+
+ */
+
+
+    /*==========================חדש חדש חדש================= */
+
+    /* .btn-secondary{
+      margin: 0vw;} */
+      /* .row {
+        margin: auto !important;
+        margin-top: 25vw !important
+      } */
+      /* .btn-group{
+        direction: ltr;
+            width: 50vw;
+            height: 8vh;} */
+        
+      
+    * {
+      box-sizing: border-box;
+    }
+    
+   .btn-group{
+      direction: ltr;
+      position: fixed;
+    bottom: 9vh;
+    left: 25vw;
+    }
+   
+    /* 31/7/2019 */
+    
+    .btn{
+    
+      width: 18vw;
+        height: 4vw;        
+        margin: 0vw;
+        font-size: 2vw;
+    
+    
+    }
+    .col-md-6{
+      padding: 0;
+        
+        margin: auto;
+    }
+    .text-center{
+      margin-top: 3vw;
+    }
+    
+    
+    /* linesSIX */
+    .one {margin-top: 0;
+      margin-left: 10vw;
+    }
+    
+    .second {margin-top: 0;
+      margin-left: 20vw;
+    }
+    
+    .third {margin-top: 0;
+      margin-left: 30vw;
+    }
+    
+    .top {
+      /* animation: mynim 5s ease ; */
+      position: absolute;
+      /*right: 1px;*/
+     
+      width: 2vw;
+      background-color: #070a0c;
+    }
+    
+    .fixed-bottom{
+      position: fixed;
+      bottom: 3vh;
+    }
+    
+    
+    /* .bottom{
+      position: absolute;
+      animation: myAnim 5s  forwards;
+    
+      width: 5px;
+      background-color: #040405;
+    }
+    
+    
+    @keyframes myAnim {
+    
+      0% {
+          top: 0px;
+      }
+    
+    
+      100% {
+          top: 0px;
+          height: 100%;
+          box-shadow: lightslategray;
+      }
+    }
+    .second {
+      margin-left: 10px;
+    }
+    
+    .third {
+      margin-left: 20px;
+    }
+    
+    .four {
+      margin-left: 30px;
+    }
+    
+    .right {
+      animation: mynim 5s linear forwards;
+      position: absolute;
+      
+      height: 0.5%;
+      width: 0PX;
+      background-color: #0070c0;
+    } */
+    
+    h1{
+      font-size: 5vw;
+    }
+    body{
+      text-align: center;
+      font-size: 1.2vw;
+      background-color: #b9987f;
+      height: 100vh!important;
+      width: 100vw!important;
+      margin: auto;
+    }
+    /* TODO */
+    html{
+      margin: 0;
+      background-color: #b9987f;
+      height: 100vh!important;
+      width: 100vw!important;
+      
+      overflow: hidden!important; 
+      text-align: center !important  ;
+    }
+    
+    /* ============================================================= */
+    .top1{
+     
+      position: absolute;
+      animation: myAnimtop 4s linear forwards;
+      
+      height: 0px;
+      width: 5px;
+      background-color: #343a40;;
+    }
+    
+    
+    @keyframes myAnimtop {
+    
+      0% {
+          top: 0px;
+      }
+    
+    
+      100% {
+          top: 0px;
+          height: 100%;
+      }
+    }
+    .bottom1{
+     
+      position: absolute;
+      animation: myAnimbottom 4s linear forwards;
+      
+      height: 0px;
+      width: 5px;
+      background-color: #343a40;;
+    }
+    
+    
+    @keyframes myAnimbottom {
+    
+      0% {
+          bottom: 0px;
+      }
+    
+    
+      100% {
+          bottom: 0px;
+          height: 100%;
+      }
+    }
+    .left1{
+    left: 4vw;
+    }
+    .left2{
+      left: 5vw;
+      }
+      .left3{
+        left: 6vw;
+        }
+    .right1{
+      right: 4vw;
+    }
+    .right2{
+      right: 5vw;
+    }
+    .right3{
+      right: 6vw;
+    }
+    .rounded{width: 24vw;}

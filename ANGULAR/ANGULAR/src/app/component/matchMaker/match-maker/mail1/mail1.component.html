@@ -1,0 +1,83 @@
+<!-- 
+<form dir="rtl"  (ngSubmit)="mailToCandidate(subject,text,m)"   #myform="ngForm" >
+<input type="text" placeholder="מייל לשליחה" name="m1" [(ngModel)]="m1"  #m="ngModel"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required><br>
+
+<p *ngIf="m.invalid && ( m.touched)">מייל לא תקין *</p>
+  <input type="text" placeholder="נושא" name="s" [(ngModel)]="s" #subject="ngModel" required><br>
+  <p *ngIf="subject.invalid && (subject.dirty || subject.touched)">שדה חובה *</p>
+  <input type="text" placeholder="טקסט" name="t" #text="ngModel" [(ngModel)]="t" required>
+  <p *ngIf="text.invalid && (text.dirty || text.touched)">שדה חובה*</p>
+  <input type="submit" value="שלח" [disabled]="!myform.valid">
+
+
+  <input type="file"> 
+
+  </form>
+ -->
+
+<!--   -->
+
+<!-- COPY -->
+<form dir="rtl" (ngSubmit)="mailToCandidate(subject,text,m,tz)" #myform="ngForm">
+    <table class="">
+        <tr>
+            <td>
+                <select class="form-control" type="text" name="candidate" (change)="getMailFromUser($event)">
+                    <option hidden [value]="" selected>בחר מועמד לשליחה </option>
+                    <option *ngFor="let item of allCandidate" [value]="item.Mail">
+                            {{item.FirstName}}  {{item.LastName}} |ת.ז. {{item.Tz}}</option>
+                        </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <input class="form-control" type="text" placeholder="מייל לשליחה" name="m1"
+                    [(ngModel)]="MatchmakerService.m1" #m="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                    required>
+
+                <p class="valid" *ngIf="m.invalid && ( m.touched)">מייל לא תקין *</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input class="form-control" type="text" placeholder="נושא" name="s" [(ngModel)]="MatchmakerService.s"
+                    #subject="ngModel" required>
+                <p class="valid" *ngIf="subject.invalid && (subject.dirty || subject.touched)">שדה חובה *</p>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea class="form-control ta" rows="4" placeholder="הודעת טקסט. . ." name="t" #text="ngModel"
+                    [(ngModel)]="MatchmakerService.t" required></textarea>
+                <p class="valid" *ngIf="text.invalid && (text.dirty || text.touched)">שדה חובה*</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>לצרוף תמונת מועמד:</label>
+                <select class="form-control" type="text" name="candidate" (change)="getTzFromUser($event)">
+                    <option hidden [value]="" selected>בחר מועמד  </option>
+                    <option *ngFor="let item of allCandidate" [value]="item.Mail">
+                            {{item.FirstName}}  {{item.LastName}} |ת.ז. {{item.Tz}}</option>
+                        </select>
+            </td>
+        </tr>
+
+        <!-- <tr>
+            <td>
+                <input class="form-control" type="text" placeholder="הכנס ת.ז. של מועמד" name="tz"
+                    [(ngModel)]="MatchmakerService.tz" #tz="ngModel">
+
+            </td>
+        </tr> -->
+        <tr>
+            <td class="td_3">
+                <button class="btn btn-danger btn-sm" style="width: 100%;" [disabled]="!myform.valid"><i
+                        class="fa fa-envelope-o" style="padding-right: 5px;"></i> שלח</button>
+            </td>
+        </tr>
+    </table>
+
+</form>

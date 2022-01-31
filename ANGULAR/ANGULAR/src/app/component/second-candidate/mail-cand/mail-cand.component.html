@@ -1,0 +1,61 @@
+<!-- <form dir="rtl" (ngSubmit)="mailToMatchMaker(subject,text)" #myform="ngForm">
+
+    <input type="text" placeholder="נושא" name="s" [(ngModel)]="s" #subject="ngModel" required><br>
+    <p *ngIf="subject.invalid && (subject.dirty || subject.touched)">שדה חובה *</p>
+    <input type="text" placeholder="טקסט" name="t" #text="ngModel" [(ngModel)]="t" required>
+    <p *ngIf="text.invalid && (text.dirty || text.touched)">שדה חובה*</p>
+    <input type="submit" value="שלח" [disabled]="!myform.valid">
+
+</form>
+
+ -->
+
+
+
+
+
+
+
+<div lang="he" class="mydiv text-center col-form-label text-md-right font-weight-bold">
+
+  <div lang="he"  >! לקוח יקר </div>
+  <div>שים לב ! על כל שאלה / בקשה תוכל ליצור קשר עם השדכן אנו נשתדל לענות לך בהקדם </div>
+</div>
+
+
+
+
+<form dir="rtl" (ngSubmit)="mailToMatchMaker(subject,text)" #myform="ngForm">
+    <table class="">
+      
+        <tr>
+            <td>
+                <input class="form-control" type="text" placeholder="נושא" name="s" [(ngModel)]="MatchmakerService.s"
+                    #subject="ngModel" required>
+                <p class="valid" *ngIf="subject.invalid && (subject.dirty || subject.touched)">שדה חובה *</p>
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea class="form-control ta" rows="4" placeholder="הודעת טקסט. . ." name="t" #text="ngModel"
+                    [(ngModel)]="MatchmakerService  .t" required></textarea>
+                <p class="valid" *ngIf="text.invalid && (text.dirty || text.touched)">שדה חובה*</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="td_3">
+                <button class="btn btn-danger btn-sm" style="width: 100%;" [disabled]="!myform.valid"><i class="fa fa-envelope-o"
+                        style="padding-right: 5px;"></i> שלח</button>
+            </td>
+        </tr>
+    </table>
+
+</form>
+
+
+
+
+
+
+

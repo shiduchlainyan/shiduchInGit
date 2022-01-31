@@ -1,0 +1,37 @@
+<div class="row">
+    <form #frm="ngForm" (ngSubmit)="submitAll()" class="col align-self-center">
+        <h1>לקוח יקר  שים לב!</h1>
+        <div class="row">
+            <div class="col-6"> מערכת לעינין עושה כמיטב יכולת ע"מ לשמור על דיסקרטיות של לקוחותיה
+                במקרה
+                של
+                התאמה בין בני הזוג המערכת תאפשר למועמד לצפות בפרטי הלקוח החיוניים לצורך הברוירם ע"מ לאשר זאת לחץ כאן
+                <strong class="bold">--></strong>
+
+            </div>
+            <button class="btn btn-light col-4" type="button" (click)="confidentialityWaiverForm()">חתימה על
+                טופס ויטור
+                סודיות</button>
+
+
+            <p class="col-6" *ngIf="!cand?.Candidate?.ConfidentialityWaiverForm&&frm.submitted">*עדיין לא חתמת על טופס ויתור  סודיות </p>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-6">על מנת להבטיח את רצינותך עליך לשלם דמי רצינות בשווי של 80 ש"ח לתשלום לחץ כאן
+                <strong class="bold">--></strong>
+            </div>
+            <div class="col-4" id="paypal-checkout-btn"></div>
+
+
+            <p  class="col-6" *ngIf="!cand.Candidate.payPal&&frm.submitted">*עדיין לא שילמת דמי רצינות</p>
+        </div>
+        <button class="btn btn-light submit" *ngIf="dCandidateService.allowAcceess==1" type="submit"> הגשת הבקשה
+        </button>
+        <!-- לשדכן -->
+        <button class="btn btn-light submit" *ngIf="dCandidateService.allowAcceess!=1" type="button"
+            (click)="finishByMatcMaker()"> סיום השלמת פרטים</button>
+
+    </form>
+</div>
+{{f(frm)}}

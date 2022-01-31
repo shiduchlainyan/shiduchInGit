@@ -1,0 +1,41 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+
+      <h1>הרשמה</h1>
+
+    </div>
+
+    <!-- Login Form -->
+    <form class="input-group-center mb-3" (ngSubmit)="submitregisterForm()">
+      <input type="text" [(ngModel)]="u.UserName" id="login" class=" second" name="UserName" placeholder="שם משתמש"
+        (keyup)="validate(u.UserName, u.Password)">
+      <div>
+        השתמש ב- 4 תוים לפחות, אין להשתמש בתו רצוף יותר מפעמיים
+      </div>
+      <p *ngIf="validUserName">{{validUserName}}</p>
+
+      <input type="password" [(ngModel)]="u.Password" id="Password" id="eye" class=" third" name="Password" placeholder="סיסמה">
+
+        <!-- (keyup)="validate(u.UserName, u.Password)"> -->
+      <div>
+        בחר סיסמה בעלת 8 תוים לפחות, אין להשתמש בתו רצוף יותר מפעמיים הסיסמה תכיל שילוב של אותיות ומספרים
+      </div>
+      <p *ngIf="validPassword">{{validPassword}}</p>
+      <input type="submit" class="w-40 fourth btn btn-warning btn-lg" value="הרשמה">
+   
+    </form>
+
+
+
+
+  </div>
+</div>

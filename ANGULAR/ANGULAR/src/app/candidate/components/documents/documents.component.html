@@ -1,0 +1,87 @@
+<button type="button" name="image" class="btn btn-light btnImage" md-button (click)="imgFileInput.click()" for="img">צרוף
+  תמונה</button>
+<div dir="rtl" class="form-group row  ddddd">
+  <input hidden type="file" #imgFileInput (change)="addImage($event)" />
+  <label class=" col-form-label text-md-right "></label>
+
+  <div class="col-md-5">
+    <input *ngIf="imageName" type="text" onkeydown="return false" id="img" class="form-control" name="img" #img="ngModel" [ngModel]=imageName>
+  </div>
+
+</div>
+
+<!-- 
+<div dir="rtl" class="form-group row  ddddd">
+  <button type="button" name="image" md-button (click)="docFileInput.click()" for="img" class="btn btn-light">צרוף
+    מסמכים</button>
+  <input hidden type="file" #docFileInput (change)="addImage($event)" />
+  <div class="col-md-1 tav_line " *ngFor="let item of docs;index as i ">
+    {{item}} <strong [hidden]="!clacute(i)">|</strong>
+  </div> -->
+
+
+
+
+
+
+
+
+
+
+<button type="button" name="image" md-button (click)="docFileInput.click()" for="img" class="btn btn-light btnImage">צרוף
+  מסמך</button>
+<br>
+<input hidden type="file" #docFileInput (change)="addDoc($event)" multiple />
+<label *ngIf="docs.length>0" lang="he" class=" col-form-label text-md-right doc"><strong>המסמכים שצורפו</strong></label>
+<div *ngFor="let item of docs; index as ind">
+
+  <div dir="rtl" class="form-group row  ddddd">
+    <label class=" col-form-label text-md-right "></label>
+    <div class="col-md-5">
+      <input class="form-control" id="doc" name="d0c-{{ind}}" [ngModel]="item" onkeydown="return false">
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<br>
+<div class="buttons">
+  <button type="button" class="btn btn-light" (click)="saveDetailCandidate()"> שמור </button>
+  <button type="button" class="btn btn-light" (click)="saveAndContinue()"> שמור והמשך </button>
+
+</div>
+<!-- <div *ngIf="cand"> 
+  <div class="form-group">
+
+    <button type="button" class="btn btn-light" name="image" class="btnRegister" md-button (click)="imgFileInput.click()">הוסף תמונה</button>
+    <input hidden type="file" #imgFileInput (change)="addImage($event)" />
+    <img  src= "http://localhost:62699/UploadFile/31567896/ילד 1 copy.jpg" alt="..." class="img-thumbnail">
+  </div>
+
+  imageName
+  <br>
+  <br><br><br><br>
+
+  <div class="form-group">
+   
+    <button type="button" class="btn btn-light" name="doc" class="btnRegister" md-button (click)="docFileInput.click()">הוסף מסמך</button>
+    <input hidden type="file" multiple #docFileInput (change)="addDoc($event)" />
+
+
+  </div>
+  <div *ngFor="let item of docs">{{item}}</div>
+
+
+  <div class="buttons">
+    <button type="button" class="btn btn-light" (click)="saveDetailCandidate()"> שמור </button>
+    <button type="button" class="btn btn-light" (click)="saveAndContinue()"> שמור והמשך </button>
+
+  </div>
+</div>  -->

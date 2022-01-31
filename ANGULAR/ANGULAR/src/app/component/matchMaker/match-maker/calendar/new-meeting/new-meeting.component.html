@@ -1,0 +1,109 @@
+<body>
+  <div class="modal-header">
+
+    <!-- class=" col-form-label text-center" -->
+
+    <h1 *ngIf="m.KindMeeting==1">פגישה בין מועמדים </h1>
+    <h1 *ngIf="m.KindMeeting==2">פגישה עם שדכן </h1>
+    <button type="button" class="close " aria-label="Close" (click)="bsModalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form dir="rtl">
+
+      <div dir="rtl" class="form-group row ddddd">
+        <label *ngIf="m.KindMeeting==1" for="tzGroom" class=" col-form-label text-md-right"> חתן </label>
+        <label *ngIf="m.KindMeeting==2" for="tzGroom" class=" col-form-label text-md-right"> שדכן </label>
+
+        <div class="col-md-6">
+          <select *ngIf="m.KindMeeting==1" class="form-control" type="text" name="candidate" [(ngModel)]="m.tzGroom">
+            <option hidden [value]="" selected> </option>
+            <option *ngFor="let item of allCandidate" [value]="item.Tz">
+                {{item.FirstName}}  {{item.LastName}} |ת.ז. {{item.Tz}}</option>
+              </select>
+          <select *ngIf="m.KindMeeting==2" class="form-control" type="text" name="match" [(ngModel)]="m.tzGroom">
+            <option hidden [value]="" selected> </option>
+            <option *ngFor="let item of allMatchMaker" [value]="item.Tz">
+              {{item.FirstName}} {{item.LastName}} ת.ז. {{item.Tz}}</option>
+          </select>
+        </div>
+        <!-- <div class="col-md-6">
+          <input type="text" [(ngModel)]="m.tzGroom" id="tzGroom" class="form-control" name="tzGroom">
+        </div> -->
+
+      </div>
+
+
+      <div dir="rtl" class="form-group row ddddd">
+        <label *ngIf="m.KindMeeting==1" for="tzBride" class=" col-form-label text-md-right"> כלה</label>
+        <label *ngIf="m.KindMeeting==2" for="tzBride" class=" col-form-label text-md-right"> מועמד</label>
+
+        <div class="col-md-6">
+          <select class="form-control" type="text" name="bird" [(ngModel)]="m.tzBride">
+            <option hidden [value]="" selected> </option>
+            <option *ngFor="let item of allCandidate" [value]="item.Tz">
+              {{item.FirstName}} {{item.LastName}} ת.ז. {{item.Tz}}</option>
+          </select>
+          <!-- <input type="text" [(ngModel)]="m.tzBride" id="FirstName" class="form-control" name="tzBride"> -->
+        </div>
+      </div>
+
+
+
+      <div dir="rtl" class="form-group row ddddd">
+        <label for="start" class=" col-form-label text-md-right">זמן התחלה</label>
+
+
+        <div class="col-md-6">
+          <input type="time" [(ngModel)]="start" id="FirstName" class="form-control" name="start"
+            value="event.start| date: 'd/m/yy, h:mm a'">
+        </div>
+      </div>
+
+      <div dir="rtl" class="form-group row ddddd">
+        <label for="end" class=" col-form-label text-md-right">זמן סיום</label>
+
+        <div class="col-md-6">
+          <input type="time" [(ngModel)]="end" id="end" class="form-control" name="end"
+            value="event.end| date: 'd/m/yy, h:mm a'">
+        </div>
+      </div>
+
+
+      <div dir="rtl" class="form-group row ddddd">
+        <label for="Place" class=" col-form-label text-md-right">מקום הפגישה</label>
+
+        <div class="col-md-6">
+          <input type="text" [(ngModel)]="m.Place" id="Place" class="form-control" name="Place">
+        </div>
+      </div>
+
+
+      <div dir="rtl" class="form-group row ddddd">
+        <label for="KindMeeting" class=" col-form-label text-md-right">סוג הפגישה</label>
+
+        <div class="col-md-6">
+          <select class="form-control" id="KindMeeting" name="KindMeeting" [(ngModel)]="m.KindMeeting">
+
+
+            <option [ngValue]="1">פגישה בין מועמדים</option>
+            <option [ngValue]="2">פגישה מועמד שדכן</option>
+
+          </select>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div *ngIf="dCandidateService?.allowAcceess!=1" class="modal-footer">
+    <p *ngIf="start >end">*זמן התחלה וסיום לא תואמים</p>
+    <div class="bottuns">
+      <button *ngIf="kind == 1" type="button" class="btn btn-default" (click)="addMeeting()"
+        [disabled]="!start >= end">הוסף</button>
+      <button *ngIf="kind == 2" type="button" class="btn btn-default" (click)="EditMeeting()">עדכן</button>
+      <button *ngIf="kind == 2" type="button" class="btn btn-default" (click)="deleteMeeting()">ביטול פגישה</button>
+    </div>
+  </div>
+
+</body>
+<!-- {{f(!this.start >= this.end)}} -->

@@ -1,0 +1,76 @@
+
+
+.register-form {
+    padding: 2%;
+    margin-top: 2%;
+}
+
+
+
+.btn {
+    width: 9vw !important;
+    margin: 0.5vw !important;
+    height: 3vw!important;
+    font-size: 1vw !important;
+
+}
+
+
+.bbb {
+
+    width: 42.9vw !important;
+    margin: auto !important;
+    height: 3vw !important;
+    font-size: 1vw !important;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.fa {
+    margin-left: 1vw;
+}
+
+.search {
+    text-align: center;
+}
+
+.card {
+    width: 43.1vw;
+    text-align: center;
+    
+    margin: auto;
+    margin-bottom: 7px
+}
+
+.tz {
+    width: 20vw;
+}
+
+.ddddd {
+    margin-bottom: 1vh;
+}
+
+.col-form-label {
+    margin-right: 1vw;
+    width: 15vw;
+}
+
+#StatusGroom,
+#StatusBride {
+    width: 12vw;
+}
+
+.tzAllSuggest {
+    width: 15vw;
+}
+.cc {
+   
+    width: 6vw !important;
+    
+}
+#command{widows: 6vw !important; 
+    margin-right: 1vw !important;}
+img{width: 1vw;
+    margin-left: .2vw;}
+    #search{ margin-right: 1vw;
+        width: 9vw !important;}

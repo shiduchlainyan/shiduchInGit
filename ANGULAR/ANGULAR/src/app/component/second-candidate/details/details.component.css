@@ -1,0 +1,97 @@
+.col-md-3 {
+    text-align: left !important;
+}
+
+
+.modal-header {
+    justify-items: center;
+    width: 100%;
+}
+
+h1 {
+    justify-self: center
+}
+
+.close {
+    margin-left: 0 !important;
+}
+
+.card-body {
+    font-size: 1.09vw !important;
+    width: 100% !important;
+}
+
+.col-sm-2 {
+    text-align: right !important;
+    padding: 0;
+}
+
+.col-md-1 {
+    text-align: right !important;
+    padding: 0;
+}
+
+.col-sm-4 {
+    text-align: right !important;
+    padding: 0;
+}
+h3{
+  color:   #b99376;
+}
+.col-sm-5{
+    text-align: right !important;
+    padding: 0;
+}
+.form-group{margin-bottom: 1rem;
+    width: 40vw;
+    margin: 0;
+}
+/* .col-sm-3{} */
+p{
+    color: unset !important;
+} 
+body{
+    text-align: center !important;
+    font-size: 1.2vw !important;
+    width: 40vw !important;
+    margin: auto !important;
+}
+
+/*----------------------------- according ==========================*/
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }

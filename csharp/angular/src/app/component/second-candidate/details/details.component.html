@@ -1,0 +1,379 @@
+<!-- TODO -->
+
+
+    <div class="modal-header">
+  
+      <button type="button" class="close " aria-label="Close" (click)="bsModalRef.hide()">
+          <span aria-hidden="true">&times;</span>
+      </button>
+  
+      <h1 class="">פרטי הצעה </h1>
+  
+    </div>
+  
+    <div class="modal-body " dir="rtl" lang="he">
+      <div class=" form-group row  ">
+  
+        <div class="col-md-9">
+          <label class=" col-form-label text-md-right font-weight-bold"><h3> 
+             פרטים אישיים </h3></label>
+          <div class="form-group row  ddddd">
+            <div class=" col-md-3 ">שם פרטי:</div>
+  
+            <div class="col-sm-2">{{cand.User.FirstName}}</div>
+  
+          </div>
+  
+          <div class="form-group row  ddddd">
+            <div class=" col-md-3 ">שם משפחה:</div>
+  
+            <div class="col-sm-2">{{cand.User.LastName}}</div>
+  
+          </div>
+          <div class="form-group row  ddddd">
+            <div class=" col-md-3 ">מצב מישפחתי:</div>
+            <div class="col-sm-2"> {{ dCandidateService.GetValue(cand.User.Status)}}</div>
+          </div>
+  
+          <div class="form-group row  ddddd">
+            <div class=" col-md-3 ">גיל:</div>
+            <div class="col-sm-2"> {{ getAgeFromDate(cand.User.BornDate)}}</div>
+          </div>
+  
+          <div class="form-group row  ddddd" *ngIf="GetNameOfValue(28)">
+            <div class=" col-md-3 "> שפת אם:</div>
+            <div class="col-sm-2"> {{GetNameOfValue(28)}}</div>
+          </div>
+  
+          <div *ngIf="dCandidateService.getCritMoreLanguage(29)" class="form-group row  ddddd">
+            <div class="col-md-3">שפות נוספות:</div>
+            <div class="col-md-1 tav_line " *ngFor="let item of dCandidateService.getCritMoreLanguage(29);index as i ">
+              {{dCandidateService.GetValue(item.ValueListId)}} <strong [hidden]="!clacute(i,29)">|</strong>
+            </div>
+  
+          </div>
+          <div class="form-group row  ddddd" *ngIf="cand.Candidate.school">
+              <div class=" col-md-3 "> מקום לימודים אחרון:</div>
+              <div class="col-sm-2"> {{cand.Candidate.school}}</div>
+            </div>
+  
+          <div class="form-group row  ddddd">
+  
+            <div class=" col-md-3 " *ngIf="cand.User.CountryId"> ארץ מגורים:</div>
+            <div class="col-sm-2"> {{cand.User.CountryId}}</div>
+          </div>
+  
+          <div class="form-group row  ddddd">
+  
+            <div class=" col-md-3 " *ngIf="cand.User.CityId"> עיר מגורים:</div>
+            <div class="col-sm-2"> {{cand.User.CityId}}</div>
+          </div>
+  
+          <div class="form-group row  ddddd" *ngIf="cand.User.StreetId">
+  
+            <div class=" col-md-3 "> רחוב:</div>
+            <div class="col-sm-2"> {{cand.User.StreetId}}</div>
+          </div>
+  
+          <div class="form-group row  ddddd" *ngIf="cand.User.BuildNum">
+  
+            <div class="col-md-3 "> מספר בית:</div>
+            <div class="col-sm-2"> {{cand.User.BuildNum}}</div>
+          </div>
+  
+          <div class="form-group row  ddddd">
+  
+            <div class=" col-md-3 " *ngIf="GetNameOfValue(6)">סוג מגורים:</div>
+            <div class="col-sm-2"> {{GetNameOfValue(6)}}</div>
+          </div>
+  
+  
+  
+  
+  
+          <label class=" col-form-label text-md-right font-weight-bold" *ngIf="cand.Children||cand.Parents||cand.Mechutanim"><h3>מצב
+            משפחתי</h3></label>
+  
+          <div class=" col-md-3 font-weight-bold text-md-right" *ngIf="cand.Children.length!=0">ילדים</div>
+          <div *ngFor="let item of cand.Children;index as i">
+            <div class="col-md-3"># {{i+1}} </div>
+  
+            <div class="form-group row  ddddd" *ngIf="item.BornDate">
+  
+              <div class=" col-md-3 ">גיל:</div>
+              <div class="col-sm-2"> {{getAgeFromDate(item.BornDate)}}</div>
+            </div>
+  
+            <div class="form-group row  ddddd" *ngIf="item.NameChilde">
+  
+              <div class=" col-md-3 "> שם:</div>
+              <div class="col-sm-2"> {{item.NameChilde}}</div>
+            </div>
+  
+          </div>
+  
+  
+  
+          <div class=" col-md-3 font-weight-bold text-md-right" *ngIf="cand.Parents.length!=0"> הורים</div>
+          <div *ngFor="let item of cand.Parents;index as i">
+  
+            <div class=" col-md-3 "> #{{i+1}} </div>
+  
+            <div class="form-group row  ddddd" *ngIf="item.BornCountryId">
+              <div class=" col-md-3 ">ארץ לידה:</div>
+              <div class="col-sm-2"> {{item.BornCountryId }}</div>
+            </div>
+            <div class="form-group row  ddddd" *ngIf="item.Jew">
+              <div class=" col-md-3 "> האם יהודי:</div>
+              <div class="col-sm-2"> {{GetNameOfSelfBool(item.Jew)}}</div>
+            </div>
+            <div class="form-group row  ddddd" *ngIf="item.Describ">
+              <div class=" col-md-3 "> תאור:</div>
+  
+              <div class="col-sm-2"> {{item.Describ}}</div>
+            </div>
+  
+  
+          </div>
+  
+  
+          <div class=" col-md-3 font-weight-bold text-md-right" *ngIf="cand.Mechutanim.length!=0">מחותנים</div>
+          <div *ngFor="let item of cand.Mechutanim;index as i">
+  
+            <div class=" col-md-3 "> #{{i+1}} </div>
+  
+            <div class="form-group row  ddddd" *ngIf="item.Fname">
+  
+              <div class=" col-md-3 "> שם משפחה:</div>
+              <div class="col-sm-2"> {{item.Fname}}</div>
+            </div>
+            <div class="form-group row  ddddd" *ngIf="item.Tel">
+              <div class=" col-md-3 "> טלפון:</div>
+              <div class="col-sm-2"> {{item.Tel}}</div>
+            </div>
+  
+          </div>
+        </div>
+  
+  
+  
+        <!--  -->
+  
+  
+  
+        <div class="col-md-9">
+  
+          <label class=" col-form-label text-md-right font-weight-bold" *ngIf="GetNameOfValue(7)||GetNameOfValue(8)||GetNameOfValue(7)||GetNameOfValue(15)
+        ||cand.Candidate.NameRav||cand.Candidate.TelRav"><h3>סקטור</h3></label><br>
+          <div class="form-group row  ddddd" *ngIf="GetNameOfValue(7)">
+            <div class=" col-md-3 ">מגזר:</div>
+            <div class="col-sm-2"> {{GetNameOfValue(7)}}</div>
+          </div>
+          <div class="form-group row  ddddd" *ngIf="GetNameOfValue(8)">
+            <div class=" col-md-3 ">עדה:</div>
+            <div class="col-sm-2"> {{GetNameOfValue(8)}}</div>
+          </div>
+          <div class="form-group row  ddddd" *ngIf="GetNameOfValue(7)">
+            <div class=" col-md-3 ">זרם:</div>
+            <div class="col-sm-2"> {{GetNameOfValue(7)}}</div>
+          </div>
+          <div class="form-group row  ddddd" *ngIf="GetNameOfValue(15)">
+            <div class=" col-md-3 ">יחוס:</div>
+            <div class="col-sm-2"> {{GetNameOfValue(15)}}</div>
+          </div>
+          <div class="form-group row  ddddd" *ngIf="cand.Candidate.NameRav">
+            <div class=" col-md-3 ">רב פוסק:</div>
+            <div class="col-sm-2"> {{cand.Candidate.NameRav}}</div>
+          </div>
+          <div class="form-group row  ddddd" *ngIf="cand.Candidate.TelRav">
+            <div class=" col-md-3 ">טלפון רב:</div>
+            <div class="col-sm-2"> {{cand.Candidate.TelRav}}</div>
+          </div>
+  
+          <label class=" col-form-label text-md-right font-weight-bold" *ngIf="GetNameOfSelfValue(17)||GetNameOfSelfValue(18)||GetNameOfValue(1)||GetNameOfValue(2)||GetNameOfValue(3)">
+           <h3> מראה
+            כללי</h3></label>
+          <div class="form-group row  ddddd" *ngIf="GetNameOfSelfValue(17)">
+            <div class=" col-md-3 ">גובה:</div>
+            <div class="col-sm-2"> {{GetNameOfSelfValue(17)}}</div>
+          </div>
+          <div class="form-group row  ddddd" *ngIf="GetNameOfSelfValue(18)">
+            <div class=" col-md-3 ">משקל:</div>
+            <div class="col-sm-2"> {{GetNameOfSelfValue(18)}}</div>
+          </div>
+          <div class="form-group row  ddddd" *ngIf="GetNameOfValue(1)">
+            <div class=" col-md-3 ">צבע עיניים:</div>
+            <div class="col-sm-2"> {{GetNameOfValue(1)}}</div>
+          </div>
+          <div class="form-group row  ddddd" *ngIf="GetNameOfValue(2)">
+            <div class=" col-md-3 ">צבע שיער:</div>
+            <div class="col-sm-2"> {{GetNameOfValue(2)}}</div>
+          </div>
+          <div class="form-group row  ddddd" *ngIf="GetNameOfValue(3)">
+            <div class=" col-md-3 ">צבע עור:</div>
+            <div class="col-sm-2"> {{GetNameOfValue(3)}}</div>
+          </div>
+          <div class="form-group row  ddddd" *ngIf="cand.User.Gender&&GetNameOfValue(16)">
+            <div class=" col-md-3 ">זקן:</div>
+            <div class="col-sm-2"> {{GetNameOfValue(16)}}</div>
+          </div>
+  
+  
+          <label class=" col-form-label text-md-right font-weight-bold" *ngIf="dCandidateService.getCritMoreLanguage(26)|| dCandidateService.getCritMoreLanguage(27)"><h3>תיאור
+            אישיותי</h3></label>
+          <div class="form-group row  ddddd" *ngIf="dCandidateService.getCritMoreLanguage(26)">
+            <div class="col-md-3">חוזקות:</div>
+            <div class="hhh" *ngFor="let item of dCandidateService.getCritMoreLanguage(26);index as i">
+              {{dCandidateService.GetValue(item.ValueListId)}} <strong [hidden]="!clacute(i,26)">|</strong>
+            </div>
+          </div>
+          <div class="form-group row  ddddd" *ngIf="dCandidateService.getCritMoreLanguage(27) ">
+            <div class=" col-md-3">חולשות:</div>
+            <div class="hhh"  *ngFor="let item of dCandidateService.getCritMoreLanguage(27);index as i">
+              {{dCandidateService.GetValue(item.ValueListId)}} <strong [hidden]="!clacute(i,27)">|</strong>
+  
+            </div>
+          </div>
+          <div>
+            <div *ngIf="cand.MigbalaCandidates.length!=0" class="col-md-3 font-weight-bold text-md-right">מיגבלות</div>
+            <div *ngFor="let item of cand.MigbalaCandidates;index as i">
+              <div class="col-md-3"># {{i+1}} </div>
+              <div class="form-group row  ddddd" *ngIf="item.KindMigbala">
+                <div class=" col-md-3 ">סוג מיגבלה:</div>
+                <div class="col-sm-2"> {{dCandidateService.GetValue(item.KindMigbala)}}</div>
+              </div>
+              <div class="form-group row  ddddd" *ngIf="item.levelMigbala">
+                <div class=" col-md-3 "> רמת מיגבלה:</div>
+                <div class="col-sm-2"> {{dCandidateService.GetValue(item.levelMigbala)}}</div>
+              </div>
+              <div class="form-group row  ddddd" *ngIf="item.Describe">
+                <div class=" col-md-3 ">תיאור:</div>
+                <div class="col-sm-2"> {{item.Describe}}</div>
+              </div>
+              <div class="form-group row  ddddd" *ngIf="item.Genetic">
+                <div class=" col-md-3 ">תורשתי:</div>
+                <div class="col-sm-2"> {{GetNameOfSelfBool(item.Genetic)}}</div>
+              </div>
+  
+  
+  
+            </div>
+          </div>
+          <div>
+            <div *ngIf="cand.Hospitalizations.length!=0" class="col-md-3 font-weight-bold text-md-right">אישפוזים</div>
+            <div *ngFor="let item of cand.Hospitalizations;index as i">
+              <div class="col-md-3"># {{i+1}} </div>
+              <div class="form-group row  ddddd" *ngIf="item.NameDepartment">
+                <div class=" col-md-3 ">שם מחלקה:</div>
+                <div class="col-sm-2"> {{item.NameDepartment}}</div>
+              </div>
+              <div class="form-group row  ddddd" *ngIf="item.TreatDoctor">
+                <div class=" col-md-3 ">רופא מטפל:</div>
+                <div class="col-sm-2"> {{item.TreatDoctor}}</div>
+              </div>
+              <div class="form-group row  ddddd" *ngIf="item.TelTreatDr">
+                <div class=" col-md-3 ">טלפון רופא מטפל:</div>
+                <div class="col-sm-2"> {{item.TelTreatDr}}</div>
+              </div>
+              <div class="form-group row  ddddd" *ngIf="item.NameHospital">
+                <div class=" col-md-3 ">שם ביה"ח:</div>
+                <div class="col-sm-2"> {{item.NameHospital}}</div>
+              </div>
+              <div class="form-group row  ddddd" *ngIf="item.FromDate">
+                <div class=" col-md-3 ">מתאריך:</div>
+                <div class="col-sm-2"> {{item.FromDate |date: 'shortDate' }}</div>
+              </div>
+              <div class="form-group row  ddddd" *ngIf="item.UntilDate">
+                <div class=" col-md-3 ">עד תאריך:</div>
+                <div class="col-sm-2"> {{item.UntilDate |date: 'shortDate' }}</div>
+              </div>
+              <div class="form-group row  ddddd" *ngIf="item.Describ">
+                <div class=" col-md-3 ">תאור:</div>
+                <div class="col-sm-2"> {{item.Describ}}</div>
+              </div>
+  
+            </div>
+          </div>
+  
+          <div>
+            <div *ngIf="dCandidateService.getCritMoreLanguage(34)" class="col-md-3 font-weight-bold text-md-right">תרופות</div>
+            <div *ngFor="let item of dCandidateService.getCritMoreLanguage(34);index as i">
+  
+              <div class="form-group row  ddddd">
+                <div class=" col-md-3 ">שם תרופה:</div>
+                <div class="col-sm-2"><strong>{{i+1}} </strong> {{dCandidateService.GetValue(item.ValueListId)}}</div>
+              </div>
+            </div>
+          </div>
+  
+  
+  
+          <!-- תגית סוגרת לתאור אישיותי -->
+  
+          <label class=" col-form-label text-md-right font-weight-bold" *ngIf="GetNameOfValue(4)||dCandidateService.getCritMoreLanguage(30)||cand.User.Gender&&GetNameOfValue(23)||cand.User.Gender&&GetNameOfValue(24)">
+            <h3>תחום
+            עיסוק</h3></label>
+  
+          <div class="form-group row  ddddd" *ngIf="GetNameOfValue(4)">
+            <div class=" col-md-3 ">תואר:</div>
+            <div class="col-sm-2"> {{GetNameOfValue(4)}}</div>
+          </div>
+          <div *ngFor="let item of dCandidateService.getCritMoreLanguage(30);index as i">
+          
+            <div class="form-group row  ddddd">
+              <div class=" col-md-3 ">עיסוק:</div>
+              <div class="col-sm-2" lang="he"> <strong>{{i+1}} </strong> {{dCandidateService.GetValue(item.ValueListId)}}</div>
+            </div>
+  
+          </div>
+          <div class="form-group row  ddddd" *ngIf="cand.User.Gender&&GetNameOfValue(23)">
+  
+            <div class=" col-md-3 ">לימוד תורה:</div>
+            <div class="col-sm-2"> {{GetNameOfValue(23)}}</div>
+          </div>
+          <div class="form-group row  ddddd" *ngIf="cand.User.Gender&&GetNameOfValue(24)">
+            <div class=" col-md-3 ">לימוד תורה אחרי החתונה:</div>
+            <div class="col-sm-2"> {{GetNameOfValue(24)}}</div>
+          </div>
+  
+          <label class=" col-form-label text-md-right font-weight-bold" *ngIf="GetNameOfValue(13)||GetNameOfValue(14)||GetNameOfValue(10)||GetNameOfValue(11)||cand.User.Gender&&GetBoolFromValueList(22)">
+              <h3> פרטים
+                  נוספים</h3></label>
+  
+          <div *ngIf="GetNameOfValue(13)">
+            <div class="form-group row  ddddd">
+              <div class=" col-md-3 " *ngIf="GetNameOfValue(13)">שותה:</div>
+              <div class="col-sm-2"> {{GetNameOfValue(13)}}</div>
+            </div>
+          </div>
+          <div class="form-group row  ddddd" *ngIf="GetNameOfValue(14)">
+            <div class=" col-md-3 ">מעשן:</div>
+            <div class="col-sm-2"> {{GetNameOfValue(14)}}</div>
+          </div>
+          <div class="form-group row  ddddd" *ngIf="GetNameOfValue(10)">
+            <div class=" col-md-3 ">מצב כספי מועמד:</div>
+            <div class="col-sm-2"> {{GetNameOfValue(10)}}</div>
+          </div>
+          <div class="form-group row  ddddd" *ngIf="GetNameOfValue(11)">
+            <div class=" col-md-3 ">מצב כספי הורים:</div>
+            <div class="col-sm-2"> {{GetNameOfValue(11)}}</div>
+          </div>
+          <div class="form-group row  ddddd" *ngIf="cand.User.Gender&&GetBoolFromValueList(22)">
+            <div class=" col-md-3 ">רישיון:</div>
+            <div class="col-sm-2"> {{GetBoolFromValueList(22)}}</div>
+          </div>
+          <div class="col-md-3 font-weight-bold text-md-right" *ngIf="cand.Documents.length!=0">מסמכים והערות</div>
+  
+          <div class="form-group row  ddddd"*ngFor="let item of cand.Documents">
+            
+              <button class="btn btn-light  col-md-3 " (click)="downloadFile(item.Document1)">לצפיה</button>
+            <div class=" col-md-3 ">{{item.Describe}} </div>
+  
+  
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+    </div>
+   

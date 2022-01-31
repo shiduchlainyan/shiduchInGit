@@ -1,0 +1,40 @@
+<div *ngIf="dCandidateService?.allowAcceess!=1" dir="rtl" class="form-group row  ddddd">
+  <button class="btn btn-default" (click)="GetMeetingByTz()">הצג פגישות של:</button>
+  <button class="btn btn-default" (click)="GetMeetingMatcMaker()">הצג פגישות מועמד שדכן</button>
+
+  <div class="col-md-5">
+    <select class="form-control" type="text" name="candidate" [(ngModel)]="Tz">
+      <option hidden [value]="" selected>בחר מועמד </option>
+      <option *ngFor="let item of allCandidate" [value]="item.Tz">
+          {{item.FirstName}}  {{item.LastName}} |ת.ז. {{item.Tz}}</option>
+        </select>
+    <!-- <input class="form-control" type="text" placeholder="הכנס ת.ז." [(ngModel)]="Tz"> -->
+  </div>
+</div>
+<div class='app'>
+
+  <!-- <div class='app-top'>
+    <button (click)='toggleVisible()'>toggle visible</button>
+    <button (click)='toggleWeekends()'>toggle weekends</button>
+    <button (click)='gotoPast()'>go to a date in the past</button>
+    (also, click a date/time to add an event)
+  </div> -->
+  <!-- dayGridMonth,listWeek -->
+  <div class='app-calendar' *ngIf="calendarVisible">
+    <full-calendar #calendar defaultView="dayGridMonth" [header]="{
+        left:  'next,prev today' ,
+        center:  'title',
+        right: ''
+      }"
+      locale='he' dir="rtl" [buttonText]="{
+        today:    'היום',
+        month:    'חודש',
+        week:     'שבוע',
+        day:      'יום',
+        list:     'רשימה'
+      }"
+      [plugins]="calendarPlugins" [weekends]="calendarWeekends" [events]="calendarEvents" (dateClick)="handleDateClick($event)"
+      (eventClick)="handleEventeClick($event)"></full-calendar>
+  </div>
+
+</div>

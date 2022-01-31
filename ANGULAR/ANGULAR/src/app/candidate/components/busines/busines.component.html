@@ -1,0 +1,76 @@
+<!-- תחום עיסוק -->
+
+<div *ngIf="cand">
+    <div dir="rtl" class="form-group row ddddd">
+        <label for="DegreeKind" class=" col-form-label text-md-right"> איזה תואר יש לך</label>
+
+        <div class="col-md-5">
+            <select class="form-control" id="DegreeKind" name="DegreeKind" [ngModel]="dCandidateService.GetIDListById(4)"
+                #DegreeKind="ngModel" (ngModelChange)="changeValue(4,$event)">
+                <option *ngFor="let valueLis of dCandidateService.GetValueList(4)" [value]="valueLis.ValueListId">
+                    {{valueLis.Value}}</option>
+            </select>
+        </div>
+    </div>
+
+
+    <div dir="rtl" class="form-group row  ddddd">
+        <label for="numOccupation" class=" col-form-label text-md-right">מספר עיסוקים</label>
+
+        <div class="col-md-5">
+
+            <input type="number" id="numOccupation" class="form-control" name="numOccupation" [(ngModel)]="numOccupation"
+                min="0" (change)="addOccupation()">
+        </div>
+    </div>
+
+    <div *ngFor="let item of getCritMoreOccupation(); index as ind" dir="rtl" class="form-group row  ddddd">
+        <label class=" col-form-label text-md-right"><strong>עיסוק #{{ind+1}}</strong></label>
+        
+            <div class="col-md-5">
+                <select class="form-control" id="Occupation" name="Occupation-{{ind}}" [(ngModel)]="item.ValueListId">
+                    <option *ngFor="let valueLis of dCandidateService.GetValueList(30)" [value]="valueLis.ValueListId">
+                        {{valueLis.Value}}</option>
+                </select>
+            </div>
+       
+    </div>
+
+    <!-- עיסוק תורני רק לבנים -->
+
+    <div *ngIf="cand.User.Gender">
+            <label  *ngIf="cand.User.Gender" class=" col-form-label text-md-right font-weight-bold">עיסוק תורני</label>
+
+        <div class="form-group row  ddddd">
+                <label for="NameChilde" class=" col-form-label text-md-right">לימוד תורה</label>
+
+            <div class="col-md-5">
+                <select class="form-control" id="learnTora" name="learnTora" [ngModel]="dCandidateService.GetIDListById(23)"
+                    #learnTora="ngModel" (ngModelChange)="changeValue(23,$event)">
+                    <option *ngFor="let valueLis of dCandidateService.GetValueList(24)" [value]="valueLis.ValueListId">
+                        {{valueLis.Value}}</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group row  ddddd">
+                <label for="afterWedding" class=" col-form-label text-md-right">אחרי החתונה</label>
+
+            <div class="col-md-5">
+                <select class="form-control" id="afterWedding" name="afterWedding" [ngModel]="dCandidateService.GetIDListById(24)"
+                    #afterWedding="ngModel" (ngModelChange)="changeValue(24,$event)">
+                    <option *ngFor="let valueLis of dCandidateService.GetValueList(24)" [value]="valueLis.ValueListId">
+                        {{valueLis.Value}}</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="buttons">
+        <button type="button" class="btn btn-light" (click)="saveDetailCandidate()"> שמור </button>
+        <button type="button" class="btn btn-light" (click)="saveAndContinue()"> שמור והמשך </button>
+    </div>
+</div>
+<!-- תחום עיסוק סוף-->

@@ -1,0 +1,40 @@
+<form #form="ngForm">
+    <div *ngIf="cand">
+        <label class=" col-form-label text-md-right font-weight-bold">פרטים נוספים</label>
+
+        <div *ngFor="let crit of criterionPratimNosafim; index as i" dir="rtl" class="form-group row  ddddd">
+            <label for="criteria" class=" col-form-label text-md-right"> {{crit.NameCriterion}}</label>
+
+            <div class="col-md-5">
+                <select class="form-control" id="criteria" name="criteria-{{i}}" [ngModel]="dCandidateService.GetIDListById(crit.CriterionId)"
+                    (ngModelChange)="changeValue(crit.CriterionId,$event)">
+                    <option *ngFor="let valueLis of dCandidateService.GetValueList(crit.CriterionId)" [value]="valueLis.ValueListId">{{valueLis.Value}}</option>
+                </select>
+            </div>
+
+        </div>
+
+
+        <div *ngFor="let itttem of getCritLicense(); index as iii">
+            <div dir="rtl" class="form-group row  ddddd">
+                <label for="Islicense" class=" col-form-label text-md-right">רישיון</label>
+
+                <div class="col-md-5">
+                    <select [(ngModel)]="itttem.selfBool" class="form-control" name="Islicense-{{iii}}" id="Islicense"
+                        #Islicense="ngModel">
+                        <option [ngValue]="false">לא</option>
+                        <option [ngValue]="true">כן</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+        <p *ngIf="Islicense?.control?.touched&&!Islicense?.control?.valid">שדה חובה*</p>
+
+
+        <div class="buttons">
+            <button type="button" class="btn btn-light" (click)="saveDetailCandidate()"> שמור </button>
+            <button type="button" class="btn btn-light" (click)="saveAndContinue()"> שמור והמשך </button>
+        </div>
+    </div>
+</form>

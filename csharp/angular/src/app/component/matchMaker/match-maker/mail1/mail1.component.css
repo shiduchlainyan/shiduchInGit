@@ -1,0 +1,43 @@
+body {
+    background-color:#f1f1f1;
+  }
+  
+  div.center{
+    margin-left:400px;
+  }
+  .td_3{
+    text-align: center;
+  }
+  form{
+    margin: auto;
+    margin-top: 6vh;
+  
+  }
+  td{
+      margin: 5vw;
+      text-align: right;
+  }
+ table{
+    margin: auto;
+ }
+ .form-control{
+    margin-bottom: 1vh;
+    width: 40vw;
+    height: 7vh;
+ }
+ .valid{
+    margin: 0.5vh;
+    text-align: right;
+    
+ }
+ label{
+   text-align: right;
+ }
+ .ta{
+  height: 15vh;
+ }
+ .btn-sm{
+  width: 40vw;
+  height: 6vh;
+  margin: 0vw;
+ }

@@ -1,0 +1,74 @@
+
+.testActive {
+  border: none;
+    background: #b99376 !important;
+    color: #fff;
+    border-radius: 0;
+    transition: background 0.20s linear;
+}
+
+nav > .nav.nav-tabs{
+
+    border: none;
+      color:#fff;
+      background:#343a40;
+      border-radius:0;
+  
+  }
+  nav > div a.nav-item.nav-link,
+  nav > div a.nav-item.nav-link.active
+  {
+    border: none;
+      padding: 18px 25px;
+      color:#fff;
+      background:#343a40;
+      border-radius:0;
+  }
+  
+  nav > div a.nav-item.nav-link.active:after
+   {
+    content: "";
+    position: relative;
+    bottom: -60px;
+    left: -10%;
+    border: 15px solid transparent;
+    border-top-color: #b99376 ;
+  }
+  .tab-content{
+   
+    background: #fdfdfdf0;
+    line-height: 25px;
+    border: 1px solid #ddd;
+    border-top: 5px solid #b99376;
+    border-bottom: 5px solid #b99376;
+    text-align: right;
+    
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+    height: 94.5vh;
+    direction: ltr;
+  }
+  
+  nav > div a.nav-item.nav-link:hover,
+  nav > div a.nav-item.nav-link:focus
+  {
+    border: none;
+      background: #b99376;
+      color:#fff;
+      border-radius:0;
+      transition:background 0.20s linear;
+     
+  }
+ html {
+  /* url("cupppp.png") repeat 3vw 3vh,שייך לתמונת רקע */
+    background:  #919395 !important;
+    /* background-color:#b99376;  */
+    /* background: url(cup.png); */
+   
+    height: 100vh!important;
+    width: 100vw!important;
+    
+    overflow: hidden!important; 
+  }
+  

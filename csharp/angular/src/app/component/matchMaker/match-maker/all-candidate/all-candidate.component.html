@@ -1,0 +1,87 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="tab-content" id="myTabContent">
+
+
+
+  <div class="card sticky-top">
+    <button class="card-img-top button bbb btn" name="eeeee" lang="he" (click)="show()"> ...חיפוש לפי<img src="../../../../../assets/wight.png"></button>
+    <div class="card-body" *ngIf="showMe">
+      <div dir="rtl" class="col-md-13 row ddddd ">
+        <label for="tzGroom" class=" col-form-label text-md-right " >תעודת זהות </label>
+        <div class="col-md">
+          <input type="text" [(ngModel)]="tzz" class="form-control tz"(keypress)="numberOnly($event)" 
+          minlength="8" maxlength="9" (keyup)="onkeyupMethod()">
+        </div>
+      </div>
+      <div dir="rtl" class="col-md-13 row ddddd ">
+        <label for="lastname" class=" col-form-label text-md-right " >שם משפחה </label>
+        <div class="col-md">
+          <input type="text" [(ngModel)]="lastname" name="lastname"(keypress)="stringOnly($event)" class="form-control tz" (keyup)="onkeyupMethod()">
+        </div>
+      </div>
+      <div dir="rtl" class="col-md-13 row ddddd ">
+        <label for="tzGroom" class=" col-form-label text-md-right ">מין</label>
+        <div class="col-md" dir="rtl">
+          <select class="form-control tz" id="Gender" name="Gender"  [(ngModel)]="Gender" (change)="onkeyupMethod()">
+            <option [ngValue]="1">זכר</option>
+            <option [ngValue]="2">נקבה</option>
+            <option [ngValue]="3">זכר ונקבה</option>
+
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <label>עיר מגורים</label>
+<input type="text" [(ngModel)]="city" (keyup)="onkeyupMethod()"> -->
+
+
+
+
+
+
+  <!-- <div *ngFor="let item of onkeyupMethod()" style="  border: 1px solid  #e73cae;">
+  <label> תעודת זהות :{{item.Tz}}</label><br>
+  <label> שם פרטי:{{item.FirstName}}</label><br>
+  <label> שם מישפחה :{{item.LastName}}</label><br>
+  <label> מין :{{getGender(item.Gender)}}</label><br>
+  <label> גיל :{{MatchmakerService.getAgeFromDate(item.BornDate)}}</label><br>
+<button type="button" (click)="Details(item.Tz)">פרטים </button>
+
+</div> -->
+
+
+
+  <div class="card card2">
+
+    <div class="card-group" dir="rtl">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">תעודת זהות </th>
+            <th scope="col">שם פרטי</th>
+            <th scope="col">שם משפחה</th>
+            <th scope="col">עיר מגורים </th>
+            <th scope="col">מין</th>
+            <th scope="col"> גיל</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of onkeyupMethod();index as i" (click)="openModalWithComponent(item.Tz)">
+            <th scope="row">{{i+1}}</th>
+            <td>{{item.Tz}}</td>
+            <td>{{item.FirstName}}</td>
+            <td>{{item.LastName}}</td>
+            <td>{{item.CityId}}</td>
+            <td>{{getGender(item.Gender)}}</td>
+            <td>{{MatchmakerService.getAgeFromDate(item.BornDate)}}</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
